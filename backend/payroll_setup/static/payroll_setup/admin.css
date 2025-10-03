@@ -1,0 +1,29 @@
+/* Equal-width two-column layout for EdDefinition 'General' fieldset */
+fieldset.gen-grid .form-row .form-multiline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Ensure each field box fills its grid column */
+fieldset.gen-grid .form-row .form-multiline > div {
+  width: 100% !important;
+}
+
+/* Ensure inputs/selects stretch full width inside their field box */
+fieldset.gen-grid .form-row .form-multiline > div .related-widget-wrapper,
+fieldset.gen-grid .form-row .form-multiline > div .vTextField,
+fieldset.gen-grid .form-row .form-multiline > div select,
+fieldset.gen-grid .form-row .form-multiline > div input,
+fieldset.gen-grid .form-row .form-multiline > div .selector,
+fieldset.gen-grid .form-row .form-multiline > div .autocomplete {
+  width: 100% !important;
+}
+
+/* Stack on narrow screens */
+@media (max-width: 1024px) {
+  fieldset.gen-grid .form-row .form-multiline {
+    grid-template-columns: 1fr;
+  }
+}

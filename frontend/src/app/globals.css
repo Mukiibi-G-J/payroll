@@ -1,0 +1,60 @@
+/* Import existing Accupay CSS files to preserve exact styling */
+@import "../styles/style.css";
+@import "../styles/animate.min.css";
+@import "../styles/odometer.css";
+@import "../styles/swiper.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Test CSS to verify imports are working */
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Responsive font sizes matching original design */
+@media (min-width: 768px) {
+  .display-2 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .display-2 {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .display-2 {
+    font-size: 88px;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-outfit);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Outfit", sans-serif;
+}

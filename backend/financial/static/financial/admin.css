@@ -1,0 +1,9 @@
+/* Add spacing between object-tools buttons on GLAccount changelist */
+.change-list .object-tools {
+  display: flex;
+  gap: 10px;
+}
+
+.change-list .object-tools li {
+  margin: 0; /* reset default */
+}

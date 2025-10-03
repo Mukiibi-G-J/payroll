@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/fav.png" />
+    <title>Blog Page - Accupay HTML Website</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <main>
+      <!-- Header Section Start -->
+      <header class="">
+  <div class="top-0 left-0 right-0 z-50 header headerAbsolute 2">
+    <div class="flex justify-between items-center container text-s1 py-6">
+      <div class="pb-1 flex justify-start items-center gap-3">
+        <button class="lg:hidden text-3xl mobileMenuOpenButton">
+          <i class="ph ph-list"></i>
+        </button>
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="accupay logo" />
+        </a>
+      </div>
+      <!-- Desktop Menu Start -->
+      <nav class="max-lg:hidden">
+        <ul class="flex justify-center items-center gap-3">
+          <li class="">
+            <a
+              href="index.html"
+              class="menu hover:header_menu_shadow duration-700 px-2 py-3 rounded-lg"
+              >Home</a
+            >
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Services
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="all-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    All Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="payroll-processing.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Payroll Processing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="accounting-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Accounting Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="taxation-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Taxation Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="real-state-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Real State Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="healthcare-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Healthcare Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="dentist-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Dentist Services
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Shop
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="shop.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Shop Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Shop Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="cart.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Cart
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Blog
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="blog.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Blog Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Blog Details
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:header_menu_shadow duration-700 px-2 py-3 rounded-lg menu"
+              >Contact</a
+            >
+          </li>
+
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Pages
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="appointment.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Appointment
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="case-study.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Case Study
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="case-study-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Case Study Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="team-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Team Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    FAQ Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="login.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="register.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Register
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="privacy-policy.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="terms-conditions.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="not-found.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    404 Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Desktop Menu End -->
+
+      <div
+        class="flex justify-end items-center gap-2 sm:gap-6 xl:gap-10 font-medium max-sm:hidden"
+      >
+        <div class="flex justify-between items-center gap-1">
+          <i
+            class="ph ph-phone-call bg-s1 rounded-full text-s2 p-2 md:p-3 text-lg lg:text-2xl !leading-none"
+          ></i>
+          <a href="tel:+123456789" class="max-xl:hidden"> + 1234 567 865 </a>
+        </div>
+        <a
+          href="contact.html"
+          class="flex justify-center max-sm:text-sm items-center gap-3 py-2 md:py-3 px-3 md:px-6 rounded-full bg-s2 border border-mainTextColor text-mainTextColor group font-medium"
+        >
+          Get Started
+          <i
+            class="ph-bold ph-arrow-up-right group-hover:rotate-[45deg] duration-500 text-base sm:text-xl lg:text-2xl !leading-[0]"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--  Mobile Menu Start -->
+  <nav class="">
+    <div
+      class="fixed top-0 left-0 bg-s1/80 h-full w-full lg:hidden duration-700 z-[998] mobileMenuBg mobileMenuBgClose"
+    ></div>
+
+    <div
+      class="flex justify-start flex-col items-start gap-8 pb-10 lg:gap-20 fixed lg:hidden top-0 left-0 w-3/4 min-[500px]:w-1/2 h-full bg-s2 overflow-y-auto duration-700 z-[999] mobileMenu mobileMenuClose"
+    >
+      <div class="flex justify-between items-center w-full p-4 sm:p-8">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="logo" />
+        </a>
+        <i class="ri-close-line !text-3xl cursor-pointer mobileMenuCloseButton">
+          <i class="ph ph-x"></i>
+        </i>
+      </div>
+
+      <ul
+        class="text-lg sm:text-xl flex gap-6 lg:gap-10 items-start flex-col pl-8"
+      >
+        <li>
+          <a href="index.html" class="menu-hover hover:after:border-p1">
+            Home
+          </a>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Services</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+
+            <ul
+              class="pl-4 flex justify-start items-start flex-col gap-2 overflow-hidden duration-700 subMenuClose subMenu"
+            >
+              <li>
+                <a href="all-services.html" class="text-base">
+                  <span>-</span> All Services
+                </a>
+              </li>
+              <li>
+                <a href="payroll-processing.html" class="text-base">
+                  <span>-</span> Payroll Processing
+                </a>
+              </li>
+              <li>
+                <a href="accounting-services.html" class="text-base">
+                  <span>-</span> accounting Services
+                </a>
+              </li>
+              <li>
+                <a href="taxation-services.html" class="text-base">
+                  <span>-</span> Taxation Services
+                </a>
+              </li>
+              <li>
+                <a href="real-state-services.html" class="text-base">
+                  <span>-</span> Real State Services
+                </a>
+              </li>
+              <li>
+                <a href="healthcare-services.html" class="text-base">
+                  <span>-</span> Healthcare Services
+                </a>
+              </li>
+              <li>
+                <a href="dentist-services.html" class="text-base">
+                  <span>-</span> Dentist Services
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Shop</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="shop.html" class="text-base">
+                    <span>-</span> Shop Page
+                  </a>
+                </li>
+                <li>
+                  <a href="shop-details.html" class="text-base">
+                    <span>-</span> Shop Details
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="text-base">
+                    <span>-</span> Cart
+                  </a>
+                </li>
+                <li>
+                  <a href="checkout.html" class="text-base">
+                    <span>-</span> Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Blog</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="blog.html" class="text-base">
+                    <span>-</span> Blog Page
+                  </a>
+                </li>
+                <li>
+                  <a href="blog-details.html" class="text-base">
+                    <span>-</span> Blog Details
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="text-base">
+                    <span>-</span> Cart
+                  </a>
+                </li>
+                <li>
+                  <a href="checkout.html" class="text-base">
+                    <span>-</span> Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="menu-hover hover:after:border-p1">
+            Contact
+          </a>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Pages</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="appointment.html" class="text-base">
+                    <span>-</span> Appointment
+                  </a>
+                </li>
+                <li>
+                  <a href="case-study.html" class="text-base">
+                    <span>-</span> Case Studies
+                  </a>
+                </li>
+                <li>
+                  <a href="case-study-details.html" class="text-base">
+                    <span>-</span> Case Study Details
+                  </a>
+                </li>
+                <li>
+                  <a href="team.html" class="text-base">
+                    <span>-</span> Team
+                  </a>
+                </li>
+                <li>
+                  <a href="team-details.html" class="text-base">
+                    <span>-</span> Team Details
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-base">
+                    <span>-</span> About
+                  </a>
+                </li>
+                <li>
+                  <a href="pricing.html" class="text-base">
+                    <span>-</span> Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="faq.html" class="text-base">
+                    <span>-</span> Faq
+                  </a>
+                </li>
+                <li>
+                  <a href="login.html" class="text-base">
+                    <span>-</span> Login
+                  </a>
+                </li>
+                <li>
+                  <a href="register.html" class="text-base">
+                    <span>-</span> Registration
+                  </a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html" class="text-base">
+                    <span>-</span> Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="terms-conditions.html" class="text-base">
+                    <span>-</span> Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="not-found.html" class="text-base">
+                    <span>-</span> 404 Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--  Mobile Menu End -->
+</header>
+
+      <!-- Header Section End -->
+
+      <!-- Breadcrump Section Start -->
+      <section class="stp-30 bg-softBg1 relative max-xxl:overflow-hidden">
+        <img
+          src="assets/images/breadcrump_icon.png"
+          alt="image"
+          class="absolute bottom-0 left-[-10%] xxl:left-0 max-lg:hidden"
+        />
+        <div
+          class="container grid grid-cols-12 gap-6 max-md:stp-15 relative z-10"
+        >
+          <div
+            class="col-span-12 md:col-span-6 flex justify-center items-start flex-col"
+          >
+            <ul class="flex justify-start items-center gap-1 flex-wrap">
+              <li>
+                <a
+                  href="index.html"
+                  class="flex justify-start items-center gap-1"
+                >
+                  <i class="ph ph-house"></i>
+                  <span class="hover:text-s2 duration-300">Home</span>
+                </a>
+              </li>
+
+              <li class="flex justify-start items-center gap-1">
+                <i class="ph ph-caret-right"></i>
+                Blog
+              </li>
+            </ul>
+
+            <h1 class="display-3 pt-4">Our Blog</h1>
+
+            <p class="text-bodyText pt-6">
+              Explore our insightful blog for expert perspectives on accounting,
+              taxation, and payroll processing.
+            </p>
+          </div>
+          <div
+            class="col-span-12 md:col-span-6 flex justify-center items-center"
+          >
+            <img
+              src="assets/images/breadcrumb_img_17.png"
+              alt="image"
+              class="object-fit max-sm:max-h-[300px]"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrump Section End -->
+
+      <!-- Blog Section Start -->
+      <section class="container grid grid-cols-12 gap-6 stp-30 sbp-30">
+        <div class="col-span-12 lg:col-span-8 flex flex-col gap-6 lg:gap-10">
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Accounting
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 15, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              The Impact of Remote Work on Payroll Processing.
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img1.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Explore the transformative effects of remote work on payroll
+              processing.
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                href="blog-details.html"
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Payroll Processing
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 15, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              Ensuring Data Security in Your Accounting Practices
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img2.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Explore comprehensive strategies to fortify data security in your
+              accounting operations.
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                href="blog-details.html"
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Remote Work
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 18, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              Streamlining Year-End Financial Reporting
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img3.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Explore the transformative effects of remote work on payroll
+              processing.
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                href="blog-details.html"
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                href="blog-details.html"
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Software
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 10, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              Payroll Outsourcing vs. In-House Processing
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img4.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Uncover the pros and cons of payroll outsourcing and in-house
+              processing. Delve into cost considerations,
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Taxation
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 06, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              Best Practices for Employee Expense Management
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img5.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Discover expert strategies for optimizing employee expense
+              management.
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                href="blog-details.html"
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="">
+            <div class="flex justify-start items-center gap-3">
+              <a
+                class="bg-p1 py-2 lg:py-3 px-3 lg:px-5 rounded-full text-white max-lg:text-sm"
+              >
+                Planning
+              </a>
+              <p class="border-l pl-3 border-bodyText">Jan 01, 2024</p>
+            </div>
+            <h2 class="heading-3 pt-5 pb-6">
+              The Evolution of Cloud-Based Accounting Solutions
+            </h2>
+            <div class="overflow-hidden">
+              <img
+                src="assets/images/blog_img1.png"
+                alt="image"
+                class="hover:scale-110 duration-500 w-full h-full"
+              />
+            </div>
+            <p class="pt-6 pb-6 text-bodyText">
+              Embark on a journey through the transformative growth of
+              cloud-based accounting solutions.
+            </p>
+            <div class="flex justify-start items-center">
+              <a
+                href="blog-details.html"
+                class="flex justify-start items-center gap-1 border-b border-mainTextColor hover:border-s2 duration-300 group"
+              >
+                Read More
+                <span class="text-xl group-hover:translate-x-1 duration-500">
+                  <i class="ph ph-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-12 lg:col-span-4">
+          <div class="sticky top-32 flex flex-col gap-6 lg:gap-10">
+            <div class="border p-6 sm:p-8">
+              <h4 class="heading-4 pb-5">Search</h4>
+              <div class="flex justify-between items-center">
+                <input
+                  type="text"
+                  class="border px-6 py-3 outline-none placeholder:text-bodyText text-bodyText w-full"
+                  placeholder="Search here..."
+                />
+                <button
+                  class="block text-2xl text-white bg-p1 p-3 border border-p1 hover:bg-s2 hover:text-mainTextColor duration-500 hover:border-mainTextColor !leading-[0]"
+                >
+                  <i class="ph ph-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="border p-6 sm:p-8">
+              <h4
+                class="heading-4 mb-4 md:mb-6 pb-2 relative after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1"
+              >
+                Categories
+              </h4>
+              <ul class="flex flex-col gap-4 justify-start items-start">
+                <li class="w-full border-b">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex justify-between items-center pb-4 border-b last:border-transparent w-full hover:text-s2 duration-300"
+                  >
+                    <span>Accounting</span>
+                    <span>(4)</span>
+                  </a>
+                </li>
+                <li class="w-full border-b">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex justify-between items-center pb-4 border-b last:border-transparent w-full hover:text-s2 duration-300"
+                  >
+                    <span>Finance</span>
+                    <span>(3)</span>
+                  </a>
+                </li>
+                <li class="w-full border-b">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex justify-between items-center pb-4 border-b last:border-transparent w-full hover:text-s2 duration-300"
+                  >
+                    <span>Invest</span>
+                    <span>(6)</span>
+                  </a>
+                </li>
+                <li class="w-full border-b">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex justify-between items-center pb-4 border-b last:border-transparent w-full hover:text-s2 duration-300"
+                  >
+                    <span>Payroll Processing</span>
+                    <span>(4)</span>
+                  </a>
+                </li>
+                <li class="w-full">
+                  <a
+                    href="javascript:void(0)"
+                    class="flex justify-between items-center pb-4 border-b last:border-transparent w-full hover:text-s2 duration-300"
+                  >
+                    <span>Taxation</span>
+                    <span>(6)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border p-6 sm:p-8">
+              <h4
+                class="heading-4 mb-4 md:mb-6 pb-2 relative after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1"
+              >
+                Recent Post
+              </h4>
+              <div class="flex justify-start items-start flex-col gap-5">
+                <div class="flex justify-center items-center gap-4">
+                  <div
+                    class="overflow-hidden self-stretch flex justify-center items-center"
+                  >
+                    <img
+                      src="assets/images/recent_post_img1.png"
+                      alt="image"
+                      class="overflow-hidden object-cover w-[100px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <p class="pb-2">December 15, 2024</p>
+                    <a
+                      href="blog-details.html"
+                      class="font-bold hover:text-s3 duration-300"
+                    >
+                      Payroll Processing Essentials
+                    </a>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                  <div
+                    class="overflow-hidden self-stretch flex justify-center items-center"
+                  >
+                    <img
+                      src="assets/images/recent_post_img4.png"
+                      alt="image"
+                      class="overflow-hidden object-cover w-[100px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <p class="pb-2">December 15, 2024</p>
+                    <a
+                      href="blog-details.html"
+                      class="font-bold hover:text-s3 duration-300"
+                    >
+                      Financial Management Strategies
+                    </a>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                  <div
+                    class="overflow-hidden self-stretch flex justify-center items-center"
+                  >
+                    <img
+                      src="assets/images/recent_post_img2.png"
+                      alt="image"
+                      class="overflow-hidden object-cover w-[100px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <p class="pb-2">December 15, 2024</p>
+                    <a
+                      href="blog-details.html"
+                      class="font-bold hover:text-s3 duration-300"
+                    >
+                      Industry News and Updates
+                    </a>
+                  </div>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                  <div
+                    class="overflow-hidden self-stretch flex justify-center items-center"
+                  >
+                    <img
+                      src="assets/images/recent_post_img3.png"
+                      alt="image"
+                      class="overflow-hidden object-cover w-[100px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <p class="pb-2">December 15, 2024</p>
+                    <a
+                      href="blog-details.html"
+                      class="font-bold hover:text-s3 duration-300"
+                    >
+                      Innovations in Accounting Software
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border p-6 sm:p-8">
+              <h4
+                class="heading-4 mb-4 md:mb-6 pb-2 relative after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1"
+              >
+                Recent Post
+              </h4>
+              <div class="flex justify-start items-start flex-wrap gap-2">
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Payroll
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Software
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Accounting
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Solutions
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Planning
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Finance
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="flex justify-center items-center border text-bodyText px-4 py-2 hover:text-mainTextColor hover:bg-s2 hover:border-mainTextColor duration-300"
+                  key="{id}"
+                >
+                  Tax
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section End -->
+
+      <!-- CTA Section Start -->
+      <section
+  class="relative after:absolute after:bg-mainTextColor after:bottom-0 after:right-0 after:left-0 after:h-1/2 overflow-hidden"
+>
+  <div
+    class="container bg-p1 py-12 sm:py-20 px-4 sm:px-10 md:px-20 lg:px-40 relative z-10 wow animate__animated animate__fadeInUp"
+  >
+    <img
+      src="assets/images/sliceIcon.png"
+      alt="image"
+      class="absolute -top-4 sm:-top-6 lg:top-0 right-0 h-[60px] sm:h-[80px] lg:h-[120px] -rotate-90"
+    />
+    <p class="display-3 text-center text-white !leading-[130%]">
+      Make Accupay Part Of Your Work And Get Daily Update
+    </p>
+    <form onSubmit="{handleSubmit}" class="pt-6 sm:pt-10 relative">
+      <div class="flex justify-center items-center gap-3 max-[500px]:flex-col">
+        <input
+          type="text"
+          placeholder="Enter Your Email"
+          class="border border-mainTextColor outline-none bg-white py-3 sm:py-4 px-4 md:px-8 max-[500px]:w-full lg:w-2/4"
+        />
+        <button
+          class="border border-mainTextColor bg-s2 py-3 sm:py-4 px-4 md:px-8 font-medium"
+        >
+          Subscribe Now
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+      <!-- CTA Section End -->
+
+      <!-- Footer Section Start -->
+      <footer class="bg-mainTextColor text-white/60">
+  <div class="container grid grid-cols-12 stp-30 sbp-30 gap-6 max-xxl:pr-4">
+    <div
+      class="col-span-12 min-[450px]:col-span-6 lg:col-span-3 flex flex-col gap-6 lg:gap-8"
+    >
+      <a href="index.html">
+        <img src="assets/images/logo_white.png" alt="image" />
+      </a>
+      <p class="">
+        Your trusted partner in accounting and payroll solutions. We deliver
+        precision, efficiency, and tailored services
+      </p>
+      <ul class="flex justify-start items-center gap-2">
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-facebook-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-reddit-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-youtube-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-pinterest-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="xl:pl-30 col-span-12 min-[400px]:col-span-6 lg:col-span-3">
+      <h4
+        class="heading-4 mb-6 pb-2 relative text-white after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500"
+      >
+        Resources
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-5">
+        <li>
+          <a
+            href="index.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            About Page
+          </a>
+        </li>
+        <li>
+          <a
+            href="faq.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            FAQs Page
+          </a>
+        </li>
+        <li>
+          <a
+            href="blog.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="xl:pl-30 col-span-12 min-[400px]:col-span-6 lg:col-span-3">
+      <h4
+        class="heading-4 mb-6 pb-2 relative text-white after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500"
+      >
+        Services
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-5">
+        <li>
+          <a
+            href="dentist-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Dentist Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="healthcare-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Healthcare Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="taxation-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Taxations Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="accounting-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Accounting Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="payroll-processing.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Payroll Processing
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-12 min-[450px]:col-span-6 lg:col-span-3 xl:pl-30">
+      <h4
+        class="heading-4 mb-4 md:mb-6 pb-2 relative after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500 text-white"
+      >
+        Get In Touch
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-3">
+        <li>
+          <a
+            href="mailto:info@mail.com"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"
+              ><i class="ph ph-envelope-simple-open"></i
+            ></span>
+            info@mail.com
+          </a>
+        </li>
+        <li>
+          <a
+            href="tel:+1234579"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"><i class="ph ph-phone-call"></i></span>
+            +112 1254 124
+          </a>
+        </li>
+        <li>
+          <p
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"
+              ><i class="ph ph-paper-plane-tilt"></i
+            ></span>
+            255 Sheet, City Name Home Land, NY
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div
+      class="container py-6 flex justify-between items-center max-md:flex-col gap-6"
+    >
+      <p class="max-sm:text-center">
+        Accupay © Copyright 2024. All Rights Reserved.
+      </p>
+      <div class="flex justify-end items-center">
+        <a
+          href="privacy-policy.html"
+          class="border-r-2 border-white/60 pr-3 hover:text-white duration-500 leading-none"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="terms-conditions.html"
+          class="pl-3 hover:text-white duration-500 leading-none"
+        >
+          Terms & Conditions
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <!-- Footer Section End -->
+    </main>
+    <!-- Scroll To top Button Start -->
+    <button
+  class="fixed text-white text-xl sm:text-2xl rounded-full bg-p1 hover:bg-s2 border border-p1 hover:border-white right-6 md:right-10 p-2 sm:p-3 z-40 jumping1 duration-700 scrollButton scrollButtonHide !leading-[0]"
+  aria-label="bottom to top button"
+>
+  <span class="block">
+    <i class="ph ph-arrow-up"></i>
+  </span>
+</button>
+
+    <!-- Scroll To top Button End -->
+
+    <!--==================================================================-->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="index.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>

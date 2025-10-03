@@ -1,0 +1,621 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "23",
+        "title": "Setup Next.js 14 Project with TypeScript and Tailwind CSS",
+        "description": "Configure the existing Next.js 14 project with additional dependencies, Tailwind CSS, and set up the development environment for the payroll dashboard prototype",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "details": "Since the Next.js 14 project already exists in the frontend folder, configure Tailwind CSS for styling, set up the project structure with proper directories, configure TypeScript strict mode, and set up ESLint and Prettier. Install additional required dependencies for the payroll dashboard: Tailwind CSS, development tools, form handling libraries, and UI components. Configure next.config.js for App Router optimization and set up folder structure: /components, /app, /lib, /types, /data (for mock data). Update package.json scripts for development, build, and linting. Ensure proper TypeScript configuration for strict mode.",
+        "testStrategy": "Verify project builds successfully with new dependencies, TypeScript compilation works without errors, Tailwind CSS classes are applied correctly, development server runs on localhost:3000, and all new dependencies are properly installed and configured",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Install and configure Tailwind CSS",
+            "description": "Install Tailwind CSS and its dependencies, configure tailwind.config.js and globals.css",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T16:53:18.975Z"
+          },
+          {
+            "id": 2,
+            "title": "Set up project folder structure",
+            "description": "Create organized folder structure: /components, /lib, /types, /data directories within the existing project",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T16:57:51.834Z"
+          },
+          {
+            "id": 3,
+            "title": "Configure TypeScript strict mode",
+            "description": "Update tsconfig.json to enable strict mode and configure proper TypeScript settings",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T16:58:26.675Z"
+          },
+          {
+            "id": 4,
+            "title": "Install additional dependencies",
+            "description": "Install required packages: React Hook Form, Zod, date-fns, lucide-react, and other dashboard-specific dependencies",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:21:54.568Z"
+          },
+          {
+            "id": 5,
+            "title": "Configure ESLint and Prettier",
+            "description": "Set up ESLint rules and Prettier configuration for consistent code formatting",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:30:43.970Z"
+          },
+          {
+            "id": 6,
+            "title": "Update next.config.js",
+            "description": "Configure Next.js settings for App Router and optimize for dashboard functionality",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:31:45.787Z"
+          },
+          {
+            "id": 7,
+            "title": "Set up package.json scripts",
+            "description": "Configure development, build, lint, and type-check scripts in package.json",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:32:42.109Z"
+          }
+        ],
+        "updatedAt": "2025-09-29T17:32:42.109Z"
+      },
+      {
+        "id": "24",
+        "title": "Create Design System and UI Component Library",
+        "description": "Build a comprehensive component library based on AccuPay design system with reusable UI components for the dashboard, maintaining consistency with existing landing page branding and design patterns",
+        "status": "done",
+        "dependencies": [
+          "23"
+        ],
+        "priority": "high",
+        "details": "Create a component library in /components/ui/ with: Button, Input, Card, Modal, Table, Form components, Navigation components, and Layout components. Implement consistent styling using Tailwind CSS classes that match AccuPay branding from existing landing pages. Analyze current landing page design system to extract color palette, typography, spacing, and component patterns. Create TypeScript interfaces for all component props. Build components with proper accessibility (ARIA labels, keyboard navigation). Include variants for different states (primary, secondary, disabled, loading). Create a Storybook-like component showcase page for development reference. Implement responsive design patterns for mobile and tablet views. Ensure dashboard UI components maintain visual consistency with landing page design language including color schemes, button styles, typography hierarchy, and overall aesthetic approach.",
+        "testStrategy": "Test all components render correctly and match landing page styling, accessibility features work with screen readers, responsive design functions across device sizes, components accept proper TypeScript props, and visual consistency is maintained between landing pages and dashboard components",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Analyze existing landing page design system",
+            "description": "Extract color palette, typography, spacing, and component patterns from current AccuPay landing pages",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:55:12.629Z"
+          },
+          {
+            "id": 2,
+            "title": "Create base UI components with consistent branding",
+            "description": "Build Button, Input, Card, Modal components matching landing page design language",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:56:41.554Z"
+          },
+          {
+            "id": 3,
+            "title": "Implement Table and Form components",
+            "description": "Create data display and form components with AccuPay branding consistency",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T17:58:07.069Z"
+          },
+          {
+            "id": 4,
+            "title": "Build Navigation and Layout components",
+            "description": "Create navigation and layout components that align with landing page structure and styling",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T18:04:32.785Z"
+          },
+          {
+            "id": 5,
+            "title": "Add TypeScript interfaces and accessibility features",
+            "description": "Implement proper TypeScript props and ARIA labels for all components",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T18:05:54.622Z"
+          },
+          {
+            "id": 6,
+            "title": "Create component showcase page",
+            "description": "Build Storybook-like showcase demonstrating all components with AccuPay branding",
+            "status": "done",
+            "dependencies": [],
+            "details": "",
+            "testStrategy": "",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-29T18:07:50.908Z"
+          }
+        ],
+        "updatedAt": "2025-09-29T18:07:50.908Z"
+      },
+      {
+        "id": "25",
+        "title": "Implement Dashboard Layout and Navigation Structure",
+        "description": "Create the main dashboard layout with sidebar navigation, header, and responsive design using Next.js App Router",
+        "details": "Build the main layout component in /app/layout.tsx with sidebar navigation, header with user profile dropdown, and main content area. Implement responsive sidebar that collapses on mobile. Create navigation items for: Dashboard, Employees, Payroll, Time Tracking, Reports, Settings. Use Next.js App Router for routing with nested layouts. Implement breadcrumb navigation. Add search functionality in header. Create user profile dropdown with mock user data. Ensure WCAG 2.1 AA compliance with proper focus management and keyboard navigation.",
+        "testStrategy": "Verify navigation works across all routes, responsive design functions on mobile/tablet/desktop, keyboard navigation works properly, and layout maintains consistency across pages",
+        "priority": "high",
+        "dependencies": [
+          "24"
+        ],
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-09-30T08:32:27.544Z"
+      },
+      {
+        "id": "26",
+        "title": "Create Mock Data Layer and Context API State Management",
+        "description": "Implement comprehensive mock data sets and React Context API with useReducer for state management across all modules",
+        "details": "Create mock data files in /data/ directory: employees.ts (50+ sample employees with complete profiles), payroll.ts (payroll records, pay periods), timeEntries.ts (time tracking data), users.ts (different user roles), company.ts (company settings). Implement React Context providers for: EmployeeContext, PayrollContext, TimeTrackingContext, UserContext. Use useReducer for complex state management with actions for CRUD operations. Create custom hooks: useEmployees, usePayroll, useTimeTracking. Implement local storage persistence for prototype data. Add TypeScript interfaces for all data models matching the PRD specifications.",
+        "testStrategy": "Verify mock data loads correctly, Context providers supply data to components, state updates work through reducers, and data persists in local storage between sessions",
+        "priority": "high",
+        "dependencies": [
+          "25"
+        ],
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-09-30T08:33:13.058Z"
+      },
+      {
+        "id": "27",
+        "title": "Build Mock Authentication System with Role-Based Navigation",
+        "description": "Implement mock JWT authentication with role-based access control for HR Manager, Payroll Administrator, Business Owner, and Employee personas",
+        "details": "Create authentication context in /lib/auth/ with mock JWT token simulation. Implement login/logout functionality with different user roles: HR Manager (full access), Payroll Administrator (payroll focus), Business Owner (analytics focus), Employee (limited access). Create protected route middleware using Next.js middleware.ts. Build login page with role selection for prototype. Implement role-based navigation hiding/showing menu items based on user permissions. Create user session management with mock token expiration. Add logout functionality that clears session data.",
+        "testStrategy": "Test login/logout flows work correctly, role-based navigation shows appropriate menu items, protected routes redirect unauthorized users, and session management persists across page refreshes",
+        "priority": "medium",
+        "dependencies": [
+          "26"
+        ],
+        "status": "done",
+        "subtasks": [],
+        "updatedAt": "2025-09-30T08:34:01.077Z"
+      },
+      {
+        "id": "28",
+        "title": "Develop Employee Management Module with CRUD Operations",
+        "description": "Create comprehensive employee management interface with directory, profiles, onboarding workflow, and bulk operations using mock data",
+        "details": "Build employee pages in /app/employees/: employee list with search, filtering, and sorting; employee detail pages with complete profiles; add/edit employee forms using React Hook Form with Zod validation; employee onboarding workflow with multi-step forms. Implement features: employee directory with pagination, advanced search and filtering (department, status, hire date), employee profile pages with tabs (personal, employment, payroll settings), bulk operations (import/export simulation), employee self-service view. Use mock data for all operations with local state updates. Implement proper form validation and error handling.",
+        "testStrategy": "Verify employee CRUD operations work with mock data, search and filtering functions correctly, form validation prevents invalid submissions, and bulk operations simulate properly",
+        "priority": "medium",
+        "dependencies": [
+          "27"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Employee Directory with Search and Filtering",
+            "description": "Build the main employee list page with comprehensive search, filtering, and sorting capabilities",
+            "dependencies": [],
+            "details": "Create /app/employees/page.tsx with employee directory featuring: pagination for large datasets, search functionality by name/email/ID, advanced filtering by department, employment status, and hire date range, sortable columns (name, department, hire date, status), responsive table layout using UI components from design system. Integrate with EmployeeContext for data management and implement loading states.",
+            "status": "done",
+            "testStrategy": "Verify search returns correct results, filters work independently and in combination, sorting functions properly on all columns, pagination displays correct number of employees per page, and responsive design works on mobile devices",
+            "updatedAt": "2025-09-30T08:42:16.422Z",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Build Employee Profile Pages with Tabbed Interface",
+            "description": "Create detailed employee profile pages with organized tabbed sections for comprehensive information display",
+            "dependencies": [
+              "28.1"
+            ],
+            "details": "Develop /app/employees/[id]/page.tsx with tabbed interface containing: Personal tab (contact info, emergency contacts, personal details), Employment tab (job title, department, manager, hire date, employment status), Payroll Settings tab (salary, pay frequency, tax withholdings, benefits). Use Card components from design system and implement proper loading states while fetching employee data from context.",
+            "status": "done",
+            "testStrategy": "Test all tabs display correct employee information, navigation between tabs works smoothly, data loads properly for different employee IDs, and profile pages are accessible via keyboard navigation",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T09:25:55.702Z"
+          },
+          {
+            "id": 3,
+            "title": "Implement Add/Edit Employee Forms with Validation",
+            "description": "Create comprehensive forms for adding new employees and editing existing employee information with robust validation",
+            "dependencies": [
+              "28.2"
+            ],
+            "details": "Build /app/employees/new/page.tsx and /app/employees/[id]/edit/page.tsx using React Hook Form with Zod validation schemas. Include form sections for: personal information (name, email, phone, address), employment details (department, position, hire date, salary), emergency contacts. Implement proper error handling, field validation, and success/error notifications. Use Form components from design system.",
+            "status": "done",
+            "testStrategy": "Verify form validation prevents invalid submissions, required fields are properly marked, error messages display clearly, successful submissions update employee data in context, and form pre-populates correctly when editing existing employees",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T09:51:57.371Z"
+          },
+          {
+            "id": 4,
+            "title": "Create Multi-Step Employee Onboarding Workflow",
+            "description": "Build a guided onboarding process with multiple steps to streamline new employee setup",
+            "dependencies": [
+              "28.3"
+            ],
+            "details": "Develop /app/employees/onboarding/page.tsx with multi-step wizard: Step 1 (Personal Information), Step 2 (Employment Details), Step 3 (Payroll Setup), Step 4 (Document Upload Simulation), Step 5 (Review & Confirm). Implement progress indicator, step navigation, form persistence between steps, and ability to save draft. Use Modal and Card components for consistent UI.",
+            "status": "done",
+            "testStrategy": "Test step-by-step navigation works correctly, form data persists when moving between steps, validation prevents progression with incomplete data, progress indicator accurately reflects current step, and completed onboarding creates new employee record",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T09:59:52.098Z"
+          },
+          {
+            "id": 5,
+            "title": "Implement Bulk Operations and Employee Self-Service View",
+            "description": "Add bulk import/export functionality and create employee self-service interface for profile management",
+            "dependencies": [
+              "28.1",
+              "28.2"
+            ],
+            "details": "Create /app/employees/bulk/page.tsx for bulk operations: CSV import simulation with validation preview, bulk export functionality with filtering options, bulk status updates for multiple employees. Build /app/employees/self-service/page.tsx for employee self-service: view own profile, update personal information, view payroll information (read-only), request time off. Implement proper permissions and data filtering.",
+            "status": "done",
+            "testStrategy": "Verify bulk import validates CSV format and shows preview before processing, export generates correct data format, bulk operations update multiple records correctly, self-service view shows only appropriate employee data, and permission restrictions prevent unauthorized access",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T10:03:20.775Z"
+          }
+        ],
+        "updatedAt": "2025-09-30T10:03:20.775Z"
+      },
+      {
+        "id": "29",
+        "title": "Create Payroll Processing Module with Calculation Preview",
+        "description": "Build payroll processing interface with calculation engine simulation, pay period management, and payroll preview functionality",
+        "details": "Develop payroll pages in /app/payroll/: payroll dashboard with current pay period overview, payroll calculation interface with gross pay, deductions, taxes, and net pay preview, pay period management with different configurations (weekly, bi-weekly, monthly), payroll history and audit trail, pay stub generation preview. Implement mock payroll calculation logic with overtime calculations, tax withholdings, and various deductions. Create payroll approval workflow with preview before processing. Build pay stub template with professional formatting. Add payroll reports and summaries with mock data visualization.",
+        "testStrategy": "Test payroll calculations produce accurate results with mock data, pay period configurations work correctly, payroll preview shows proper calculations, and pay stub generation displays formatted output",
+        "priority": "medium",
+        "dependencies": [
+          "28"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Payroll Dashboard with Pay Period Overview",
+            "description": "Build the main payroll dashboard interface displaying current pay period information, employee count, and payroll status overview",
+            "dependencies": [],
+            "details": "Develop /app/payroll/page.tsx with dashboard layout showing current pay period dates, total employees to be paid, payroll processing status, and quick action buttons. Include summary cards for gross pay totals, tax withholdings, and net pay amounts. Add navigation to other payroll modules and recent payroll history preview.",
+            "status": "done",
+            "testStrategy": "Verify dashboard displays correct pay period information, summary calculations show accurate totals from mock data, navigation links work properly, and responsive design functions across devices",
+            "updatedAt": "2025-09-30T10:20:21.528Z",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Payroll Calculation Engine with Preview",
+            "description": "Create the core payroll calculation interface with gross pay, deductions, taxes, and net pay calculations using mock data",
+            "dependencies": [
+              "29.1"
+            ],
+            "details": "Build /app/payroll/calculate/page.tsx with employee selection, hours input, overtime calculations, tax withholding computations, and deduction processing. Implement mock calculation logic for federal/state taxes, FICA, benefits deductions, and garnishments. Create real-time preview of calculations with detailed breakdown showing gross pay, each deduction type, and final net pay.",
+            "status": "done",
+            "testStrategy": "Test calculation accuracy with various scenarios including overtime, different tax brackets, multiple deductions, and edge cases. Verify preview updates in real-time and calculations match expected results",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T11:21:16.496Z"
+          },
+          {
+            "id": 3,
+            "title": "Build Pay Period Management System",
+            "description": "Develop pay period configuration and management interface supporting weekly, bi-weekly, and monthly schedules",
+            "dependencies": [
+              "29.1"
+            ],
+            "details": "Create /app/payroll/periods/page.tsx with pay period setup forms, calendar integration, and schedule management. Implement configuration options for different pay frequencies, start/end dates, processing deadlines, and holiday handling. Add pay period history view and ability to create special pay periods for bonuses or corrections.",
+            "status": "done",
+            "testStrategy": "Verify pay period configurations save correctly, different frequencies calculate proper dates, calendar integration works, and pay period history displays accurately",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T11:25:30.784Z"
+          },
+          {
+            "id": 4,
+            "title": "Create Pay Stub Generation and Preview System",
+            "description": "Build professional pay stub template with generation and preview functionality using calculated payroll data",
+            "dependencies": [
+              "29.2"
+            ],
+            "details": "Develop /app/payroll/paystubs/page.tsx with pay stub template design, PDF generation preview, and batch processing capabilities. Create professional formatting with company branding, employee information, earnings breakdown, deductions detail, and year-to-date totals. Implement preview functionality before final generation and bulk pay stub creation for entire payroll runs.",
+            "status": "done",
+            "testStrategy": "Test pay stub generation produces properly formatted output, all calculation details display correctly, PDF preview functions work, and batch generation processes multiple employees successfully",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T11:31:07.290Z"
+          },
+          {
+            "id": 5,
+            "title": "Implement Payroll Approval Workflow and Audit Trail",
+            "description": "Create payroll approval process with review interface, audit logging, and payroll history management",
+            "dependencies": [
+              "29.2",
+              "29.3"
+            ],
+            "details": "Build /app/payroll/approval/page.tsx with payroll review interface, approval workflow, and audit trail functionality. Implement multi-step approval process with calculation verification, manager review, and final approval. Create comprehensive audit logging for all payroll actions, changes, and approvals. Add payroll history view with search, filtering, and detailed transaction records.",
+            "status": "done",
+            "testStrategy": "Verify approval workflow functions correctly through all steps, audit trail captures all actions with proper timestamps, payroll history displays accurate records, and approval permissions work as expected",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T11:35:28.193Z"
+          }
+        ],
+        "updatedAt": "2025-09-30T11:35:28.193Z"
+      },
+      {
+        "id": "30",
+        "title": "Implement Time Tracking and Attendance System",
+        "description": "Build time tracking interface with time entry, timesheet management, approval workflows, and overtime calculation using mock data",
+        "details": "Create time tracking pages in /app/time-tracking/: time clock interface for employees, timesheet management with weekly/monthly views, manager approval dashboard for timesheet review, overtime tracking and calculation display, leave management with vacation/sick time tracking, time-off request workflow. Implement mock time entry functionality with clock in/out simulation, timesheet creation and submission workflow, manager approval process with status updates, overtime detection and calculation, leave balance tracking and request management. Use React Hook Form for time entry forms with validation.",
+        "testStrategy": "Verify time entry interface works correctly, timesheet calculations are accurate, approval workflows function properly, and overtime calculations follow business rules",
+        "priority": "medium",
+        "dependencies": [
+          "29"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Time Clock Interface and Entry Forms",
+            "description": "Build the employee time clock interface with clock in/out functionality and time entry forms",
+            "dependencies": [],
+            "details": "Create /app/time-tracking/clock page with digital clock display, clock in/out buttons, current status indicator, and time entry forms using React Hook Form. Implement form validation for time entries, break time tracking, and project/task selection. Add mock data simulation for clock in/out actions with local storage persistence. Include time zone handling and automatic break detection.",
+            "status": "done",
+            "testStrategy": "Verify clock in/out functionality works correctly, form validation prevents invalid entries, time calculations are accurate, and mock data persists across sessions",
+            "updatedAt": "2025-09-30T12:06:38.925Z",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Timesheet Management Views",
+            "description": "Create weekly and monthly timesheet views with data display and editing capabilities",
+            "dependencies": [
+              "30.1"
+            ],
+            "details": "Build /app/time-tracking/timesheets page with weekly and monthly calendar views, timesheet data grid showing daily hours, project allocations, and total calculations. Implement timesheet editing functionality, bulk time entry options, and timesheet submission workflow. Add filtering by date range, employee, and project. Create timesheet summary cards showing total hours, overtime, and status.",
+            "status": "done",
+            "testStrategy": "Verify timesheet views display correct data, editing functionality works properly, calculations are accurate, and submission workflow updates status correctly",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:13:19.860Z"
+          },
+          {
+            "id": 3,
+            "title": "Build Manager Approval Dashboard",
+            "description": "Create manager dashboard for reviewing and approving employee timesheets",
+            "dependencies": [
+              "30.2"
+            ],
+            "details": "Develop /app/time-tracking/approvals page with pending timesheet queue, approval workflow interface, and bulk approval actions. Implement timesheet review modal with detailed time entries, comments system, and approval/rejection functionality. Add manager notifications for pending approvals, approval history tracking, and status update notifications to employees.",
+            "status": "done",
+            "testStrategy": "Verify approval workflow functions correctly, managers can review timesheet details, bulk actions work properly, and status updates are communicated to employees",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:17:54.175Z"
+          },
+          {
+            "id": 4,
+            "title": "Implement Overtime Tracking and Calculation",
+            "description": "Build overtime detection, calculation, and display functionality",
+            "dependencies": [
+              "30.2"
+            ],
+            "details": "Create overtime calculation engine with configurable rules for daily/weekly overtime thresholds, holiday pay calculations, and different overtime rates. Build /app/time-tracking/overtime page displaying overtime summary, detailed breakdown by employee and period, and overtime approval workflow. Implement automatic overtime detection in timesheet views with visual indicators and alerts.",
+            "status": "done",
+            "testStrategy": "Verify overtime calculations follow business rules correctly, automatic detection works properly, visual indicators display accurately, and overtime approval workflow functions as expected",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:19:04.614Z"
+          },
+          {
+            "id": 5,
+            "title": "Create Leave Management and Time-off Request System",
+            "description": "Build leave balance tracking and time-off request workflow",
+            "dependencies": [
+              "30.3"
+            ],
+            "details": "Develop /app/time-tracking/leave page with leave balance display, time-off request form, and request status tracking. Implement leave calendar view, manager approval workflow for time-off requests, and automatic leave balance calculations. Add different leave types (vacation, sick, personal), accrual tracking, and integration with timesheet system to block time entry during approved leave periods.",
+            "status": "done",
+            "testStrategy": "Verify leave balances calculate correctly, time-off requests follow approval workflow, leave calendar displays accurately, and integration with timesheets prevents conflicts during approved leave",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:20:58.000Z"
+          }
+        ],
+        "updatedAt": "2025-09-30T12:20:58.000Z"
+      },
+      {
+        "id": "31",
+        "title": "Build Reports and Analytics Dashboard with Data Visualization",
+        "description": "Create comprehensive reporting module with payroll reports, employee analytics, and data visualization using mock datasets",
+        "details": "Develop reports pages in /app/reports/: analytics dashboard with key metrics and charts, payroll reports (summaries, tax reports, year-end documentation), employee analytics (headcount trends, turnover analysis), custom report builder interface, data visualization with charts and graphs using a charting library (Chart.js or Recharts). Implement mock report generation with various report types, data filtering and date range selection, export functionality simulation (PDF, Excel, CSV), interactive charts and graphs with mock data, report scheduling and automation interface. Create professional report templates with AccuPay branding.",
+        "testStrategy": "Test report generation works with mock data, charts and visualizations display correctly, export functionality simulates properly, and report filtering produces expected results",
+        "priority": "medium",
+        "dependencies": [
+          "30"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Analytics Dashboard with Key Metrics and Charts",
+            "description": "Build the main analytics dashboard page with key performance indicators, summary cards, and interactive charts displaying payroll and employee metrics",
+            "dependencies": [],
+            "details": "Develop /app/reports/analytics/page.tsx with dashboard layout containing KPI cards (total employees, payroll costs, average salary, turnover rate), interactive charts using Chart.js or Recharts for payroll trends, employee distribution, and department analytics. Implement responsive grid layout with mock data integration and real-time metric updates simulation.",
+            "status": "done",
+            "testStrategy": "Verify all KPI cards display correct mock data, charts render properly with interactive features, responsive layout works across devices, and data updates simulate correctly",
+            "updatedAt": "2025-09-30T12:37:52.850Z",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Payroll Reports Module",
+            "description": "Create comprehensive payroll reporting functionality including summaries, tax reports, and year-end documentation with professional templates",
+            "dependencies": [
+              "31.1"
+            ],
+            "details": "Build /app/reports/payroll/ pages for payroll summaries, tax reports (W-2, 1099, quarterly reports), and year-end documentation. Create professional report templates with AccuPay branding, implement mock data generation for various payroll scenarios, and add report preview functionality with proper formatting and calculations.",
+            "status": "done",
+            "testStrategy": "Test all payroll report types generate with accurate mock calculations, templates maintain professional formatting with AccuPay branding, and report previews display correctly before export",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:38:52.260Z"
+          },
+          {
+            "id": 3,
+            "title": "Build Employee Analytics and Reporting",
+            "description": "Develop employee analytics module with headcount trends, turnover analysis, and demographic reporting capabilities",
+            "dependencies": [
+              "31.1"
+            ],
+            "details": "Create /app/reports/employees/ pages for headcount trends over time, turnover analysis with retention rates, demographic breakdowns, and performance metrics. Implement interactive charts for employee data visualization, trend analysis with historical mock data, and comparative analytics across departments and time periods.",
+            "status": "done",
+            "testStrategy": "Verify employee analytics display accurate trend data, turnover calculations are correct, demographic charts render properly, and historical data simulation works as expected",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:39:42.718Z"
+          },
+          {
+            "id": 4,
+            "title": "Create Custom Report Builder Interface",
+            "description": "Build an intuitive drag-and-drop report builder allowing users to create custom reports with flexible data selection and formatting options",
+            "dependencies": [
+              "31.2",
+              "31.3"
+            ],
+            "details": "Develop /app/reports/builder/ with drag-and-drop interface for selecting data fields, filters, and report layouts. Implement report template selection, custom field mapping, conditional formatting options, and preview functionality. Create wizard-style interface for guided report creation with mock data source integration.",
+            "status": "done",
+            "testStrategy": "Test drag-and-drop functionality works smoothly, report preview accurately reflects selections, custom filters apply correctly to mock data, and wizard guides users through report creation process",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:40:43.931Z"
+          },
+          {
+            "id": 5,
+            "title": "Implement Data Export and Report Scheduling",
+            "description": "Add comprehensive export functionality and automated report scheduling with multiple format support and delivery options",
+            "dependencies": [
+              "31.2",
+              "31.3",
+              "31.4"
+            ],
+            "details": "Implement export functionality simulation for PDF, Excel, and CSV formats across all report types. Create report scheduling interface with frequency options (daily, weekly, monthly), email delivery simulation, and automated report generation. Add export progress indicators, format-specific optimization, and batch export capabilities for multiple reports.",
+            "status": "done",
+            "testStrategy": "Verify export simulation works for all supported formats, scheduling interface allows proper configuration, automated delivery simulation functions correctly, and export progress indicators provide accurate feedback",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:41:47.022Z"
+          }
+        ],
+        "updatedAt": "2025-09-30T12:41:47.022Z"
+      },
+      {
+        "id": "32",
+        "title": "Create Settings and Configuration Module with User Management",
+        "description": "Build comprehensive settings interface for company profile, tax configuration, user management, and system settings using mock data",
+        "details": "Develop settings pages in /app/settings/: company profile management with business information and tax IDs, tax configuration interface for federal, state, and local taxes, pay period settings and processing schedules, user management with role-based access control, integration settings for third-party services, backup and security settings interface. Implement mock configuration management with form validation, user role management with permission matrices, company settings with tax rate configurations, integration settings with API key management simulation, security settings with audit log display. Use React Hook Form with Zod validation for all configuration forms.",
+        "testStrategy": "Verify settings forms save correctly to mock data, user management functions properly with role assignments, tax configurations validate correctly, and all settings interfaces are accessible and functional",
+        "priority": "low",
+        "dependencies": [
+          "31"
+        ],
+        "status": "done",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Company Profile Management Interface",
+            "description": "Build company profile settings page with business information forms, tax ID management, and company details configuration",
+            "dependencies": [],
+            "details": "Develop /app/settings/company page with forms for business name, address, contact information, federal tax ID (EIN), state tax IDs, business type selection, and company logo upload. Implement React Hook Form with Zod validation for all company profile fields. Create mock company data structure and context provider for company settings management.",
+            "status": "done",
+            "testStrategy": "Verify company profile forms validate correctly, data saves to mock storage, required fields are enforced, and company information displays properly across the application",
+            "updatedAt": "2025-09-30T12:53:21.340Z",
+            "parentId": "undefined"
+          },
+          {
+            "id": 2,
+            "title": "Implement Tax Configuration Interface",
+            "description": "Create comprehensive tax settings page for federal, state, and local tax rate configuration with validation",
+            "dependencies": [
+              "32.1"
+            ],
+            "details": "Build /app/settings/taxes page with tax rate configuration forms for federal income tax, state income tax, local taxes, FICA taxes (Social Security and Medicare), unemployment taxes (FUTA/SUTA), and custom tax categories. Implement tax rate validation, effective date management, and tax jurisdiction selection. Create mock tax configuration data and calculation preview functionality.",
+            "status": "done",
+            "testStrategy": "Test tax rate configurations save correctly, validation prevents invalid rates, tax calculations use correct rates, and tax settings integrate properly with payroll calculations",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:53:55.284Z"
+          },
+          {
+            "id": 3,
+            "title": "Build User Management and Role-Based Access Control",
+            "description": "Develop user management interface with role assignment, permission matrices, and user account administration",
+            "dependencies": [],
+            "details": "Create /app/settings/users page with user list, add/edit user forms, role assignment interface, and permission management. Implement role-based access control with predefined roles (Admin, Manager, HR, Employee) and custom permission matrices. Build user invitation system, password reset functionality, and user status management (active/inactive). Create mock user data with different roles and permissions.",
+            "status": "done",
+            "testStrategy": "Verify user creation and editing works correctly, role assignments apply proper permissions, access control restricts features based on roles, and user management functions operate without errors",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:54:45.642Z"
+          },
+          {
+            "id": 4,
+            "title": "Create Pay Period and Processing Schedule Settings",
+            "description": "Build pay period configuration interface with processing schedules, payroll calendar, and automated processing settings",
+            "dependencies": [
+              "32.2"
+            ],
+            "details": "Develop /app/settings/payroll page with pay period configuration (weekly, bi-weekly, semi-monthly, monthly), payroll processing schedule setup, pay date calendar management, and automated processing settings. Implement pay period validation, holiday handling, and processing deadline management. Create mock payroll schedule data and calendar integration.",
+            "status": "done",
+            "testStrategy": "Test pay period configurations generate correct schedules, processing dates calculate properly, holiday adjustments work correctly, and payroll calendar displays accurate information",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:55:36.786Z"
+          },
+          {
+            "id": 5,
+            "title": "Implement Integration and Security Settings Interface",
+            "description": "Build integration settings for third-party services and security configuration with audit logging and backup settings",
+            "dependencies": [
+              "32.3"
+            ],
+            "details": "Create /app/settings/integrations and /app/settings/security pages with API key management simulation, third-party service configuration, backup settings interface, security policy configuration, and audit log display. Implement mock integration settings for banking, accounting software, time tracking systems, and HR platforms. Build security settings for password policies, session management, and data retention policies.",
+            "status": "done",
+            "testStrategy": "Verify integration settings save correctly, API key management functions properly, security settings apply appropriate restrictions, audit logs display relevant activities, and backup settings interface operates correctly",
+            "parentId": "undefined",
+            "updatedAt": "2025-09-30T12:57:07.260Z"
+          }
+        ],
+        "updatedAt": "2025-09-30T12:57:07.260Z"
+      }
+    ],
+    "metadata": {
+      "version": "1.0.0",
+      "lastModified": "2025-09-30T12:57:07.301Z",
+      "taskCount": 10,
+      "completedCount": 10,
+      "tags": [
+        "master"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/fav.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>About - Accupay HTML Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <!-- Header Section Start -->
+    <header class="">
+  <div class="top-0 left-0 right-0 z-50 header headerAbsolute 2">
+    <div class="flex justify-between items-center container text-s1 py-6">
+      <div class="pb-1 flex justify-start items-center gap-3">
+        <button class="lg:hidden text-3xl mobileMenuOpenButton">
+          <i class="ph ph-list"></i>
+        </button>
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="accupay logo" />
+        </a>
+      </div>
+      <!-- Desktop Menu Start -->
+      <nav class="max-lg:hidden">
+        <ul class="flex justify-center items-center gap-3">
+          <li class="">
+            <a
+              href="index.html"
+              class="menu hover:header_menu_shadow duration-700 px-2 py-3 rounded-lg"
+              >Home</a
+            >
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Services
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="all-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    All Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="payroll-processing.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Payroll Processing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="accounting-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Accounting Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="taxation-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Taxation Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="real-state-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Real State Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="healthcare-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Healthcare Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="dentist-services.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Dentist Services
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Shop
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="shop.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Shop Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="shop-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Shop Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="cart.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Cart
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="checkout.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Blog
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="blog.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Blog Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="blog-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Blog Details
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:header_menu_shadow duration-700 px-2 py-3 rounded-lg menu"
+              >Contact</a
+            >
+          </li>
+
+          <li>
+            <div class="group cursor-pointer relative">
+              <div
+                class="flex justify-center items-center gap-1 relative px-2 py-3 rounded-lg hover:header_menu_shadow subMenuTitle"
+              >
+                Pages
+
+                <i
+                  class="ph ph-caret-down pt-0.5 block group-hover:rotate-180 duration-700"
+                ></i>
+              </div>
+              <ul
+                class="absolute top-12 left-0 pointer-events-none group-hover:eventunset flex justify-start items-start flex-col w-[200px] py-6 gap-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:z-50 bg-s1 text-white/80 rounded-lg group-hover:translate-y-0 group-hover:scale-100 translate-y-8 scale-75 duration-500"
+              >
+                <li>
+                  <a
+                    href="appointment.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Appointment
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="case-study.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Case Study
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="case-study-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Case Study Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="team-details.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Team Details
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pricing.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    FAQ Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="login.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="register.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Register
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="privacy-policy.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="terms-conditions.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="not-found.html"
+                    class="px-6 hover:ml-2 duration-500 hover:text-s2 subMenuItem"
+                  >
+                    404 Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Desktop Menu End -->
+
+      <div
+        class="flex justify-end items-center gap-2 sm:gap-6 xl:gap-10 font-medium max-sm:hidden"
+      >
+        <div class="flex justify-between items-center gap-1">
+          <i
+            class="ph ph-phone-call bg-s1 rounded-full text-s2 p-2 md:p-3 text-lg lg:text-2xl !leading-none"
+          ></i>
+          <a href="tel:+123456789" class="max-xl:hidden"> + 1234 567 865 </a>
+        </div>
+        <a
+          href="contact.html"
+          class="flex justify-center max-sm:text-sm items-center gap-3 py-2 md:py-3 px-3 md:px-6 rounded-full bg-s2 border border-mainTextColor text-mainTextColor group font-medium"
+        >
+          Get Started
+          <i
+            class="ph-bold ph-arrow-up-right group-hover:rotate-[45deg] duration-500 text-base sm:text-xl lg:text-2xl !leading-[0]"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--  Mobile Menu Start -->
+  <nav class="">
+    <div
+      class="fixed top-0 left-0 bg-s1/80 h-full w-full lg:hidden duration-700 z-[998] mobileMenuBg mobileMenuBgClose"
+    ></div>
+
+    <div
+      class="flex justify-start flex-col items-start gap-8 pb-10 lg:gap-20 fixed lg:hidden top-0 left-0 w-3/4 min-[500px]:w-1/2 h-full bg-s2 overflow-y-auto duration-700 z-[999] mobileMenu mobileMenuClose"
+    >
+      <div class="flex justify-between items-center w-full p-4 sm:p-8">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="logo" />
+        </a>
+        <i class="ri-close-line !text-3xl cursor-pointer mobileMenuCloseButton">
+          <i class="ph ph-x"></i>
+        </i>
+      </div>
+
+      <ul
+        class="text-lg sm:text-xl flex gap-6 lg:gap-10 items-start flex-col pl-8"
+      >
+        <li>
+          <a href="index.html" class="menu-hover hover:after:border-p1">
+            Home
+          </a>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Services</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+
+            <ul
+              class="pl-4 flex justify-start items-start flex-col gap-2 overflow-hidden duration-700 subMenuClose subMenu"
+            >
+              <li>
+                <a href="all-services.html" class="text-base">
+                  <span>-</span> All Services
+                </a>
+              </li>
+              <li>
+                <a href="payroll-processing.html" class="text-base">
+                  <span>-</span> Payroll Processing
+                </a>
+              </li>
+              <li>
+                <a href="accounting-services.html" class="text-base">
+                  <span>-</span> accounting Services
+                </a>
+              </li>
+              <li>
+                <a href="taxation-services.html" class="text-base">
+                  <span>-</span> Taxation Services
+                </a>
+              </li>
+              <li>
+                <a href="real-state-services.html" class="text-base">
+                  <span>-</span> Real State Services
+                </a>
+              </li>
+              <li>
+                <a href="healthcare-services.html" class="text-base">
+                  <span>-</span> Healthcare Services
+                </a>
+              </li>
+              <li>
+                <a href="dentist-services.html" class="text-base">
+                  <span>-</span> Dentist Services
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Shop</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="shop.html" class="text-base">
+                    <span>-</span> Shop Page
+                  </a>
+                </li>
+                <li>
+                  <a href="shop-details.html" class="text-base">
+                    <span>-</span> Shop Details
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="text-base">
+                    <span>-</span> Cart
+                  </a>
+                </li>
+                <li>
+                  <a href="checkout.html" class="text-base">
+                    <span>-</span> Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Blog</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="blog.html" class="text-base">
+                    <span>-</span> Blog Page
+                  </a>
+                </li>
+                <li>
+                  <a href="blog-details.html" class="text-base">
+                    <span>-</span> Blog Details
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="text-base">
+                    <span>-</span> Cart
+                  </a>
+                </li>
+                <li>
+                  <a href="checkout.html" class="text-base">
+                    <span>-</span> Checkout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="contact.html" class="menu-hover hover:after:border-p1">
+            Contact
+          </a>
+        </li>
+        <li>
+          <div
+            class="flex flex-col justify-start items-start group subMenuToggle"
+          >
+            <div class="flex justify-start items-center cursor-pointer">
+              <span>Pages</span>
+              <i class="!text-xl pl-1 pt-1 duration-500">
+                <i class="ph ph-caret-right"></i>
+              </i>
+            </div>
+            <div class="">
+              <ul
+                class="pl-4 flex justify-start items-start flex-col gap-2 pt-2 overflow-hidden duration-700 subMenuClose subMenu"
+              >
+                <li>
+                  <a href="appointment.html" class="text-base">
+                    <span>-</span> Appointment
+                  </a>
+                </li>
+                <li>
+                  <a href="case-study.html" class="text-base">
+                    <span>-</span> Case Studies
+                  </a>
+                </li>
+                <li>
+                  <a href="case-study-details.html" class="text-base">
+                    <span>-</span> Case Study Details
+                  </a>
+                </li>
+                <li>
+                  <a href="team.html" class="text-base">
+                    <span>-</span> Team
+                  </a>
+                </li>
+                <li>
+                  <a href="team-details.html" class="text-base">
+                    <span>-</span> Team Details
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html" class="text-base">
+                    <span>-</span> About
+                  </a>
+                </li>
+                <li>
+                  <a href="pricing.html" class="text-base">
+                    <span>-</span> Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="faq.html" class="text-base">
+                    <span>-</span> Faq
+                  </a>
+                </li>
+                <li>
+                  <a href="login.html" class="text-base">
+                    <span>-</span> Login
+                  </a>
+                </li>
+                <li>
+                  <a href="register.html" class="text-base">
+                    <span>-</span> Registration
+                  </a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html" class="text-base">
+                    <span>-</span> Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="terms-conditions.html" class="text-base">
+                    <span>-</span> Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a href="not-found.html" class="text-base">
+                    <span>-</span> 404 Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--  Mobile Menu End -->
+</header>
+
+    <!-- Header Section End -->
+
+    <!-- About Us Video Section Start -->
+    <section class="pt-24 lg:stp-30 sbp-30 bg-softBg1 relative">
+      <img
+        src="assets/images/circleIcon.png"
+        alt="image"
+        class="absolute top-60 -left-20 max-lg:h-[400px] max-sm:hidden"
+      />
+      <img
+        src="assets/images/about_vector.png"
+        alt="image"
+        class="absolute top-36 right-0 xl:right-28 max-lg:hidden"
+      />
+      <div class="container pb-10">
+        <ul class="flex justify-start items-center gap-1">
+          <li>
+            <a
+              href="index.html"
+              class="flex justify-start items-center gap-1"
+            >
+              <i class="ph ph-house"></i>
+              <span class="hover:text-s2 duration-300">Home</span>
+            </a>
+          </li>
+          <li class="flex justify-start items-center gap-1">
+            <i class="ph ph-caret-right"></i> About Us
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center items-center flex-col">
+        <div class="flex justify-center items-center pb-10 lg:pb-16 xl:pb-24">
+          <div
+            class="max-w-[600px] text-center flex justify-center items-center flex-col"
+          >
+            <p class="bg-p1 py-3 px-5 rounded-full text-white">About</p>
+            <h1 class="display-4 pt-4 pb-6">Work with AccuPay</h1>
+            <p class="text-bodyText">
+              Welcome to AccuPay, where financial excellence meets personalized
+              service. At AccuPay, we understand the intricacies of accounting
+              and payroll processing.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-[url('./assets/images/aboutVideoImg.png')] stp-30 sbp-30 w-[80%] h-[300px] bg-cover md:h-[400px] lg:h-[500px] xl:h-[600px] xxl:h-[800px] flex justify-center items-center z-10 relative after:absolute after:inset-0 after:bg-black/20"
+        >
+          <button
+            class="bg-softBg1 text-s1 p-6 lg:p-6 rounded-full text-3xl lg:text-5xl hover:bg-s2 hover:text-white duration-500 relative flex justify-center items-center z-20 leading-[0] videoModalButtonOpen"
+          >
+            <i class="ph-fill ph-play"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Video Section End -->
+
+    <!-- Accupay Story Section Start -->
+    <section class="stp-30 sbp-30">
+      <div class="container grid grid-cols-12 max-lg:gap-6">
+        <div
+          class="col-span-12 md:col-span-6 lg:col-span-5 flex flex-col justify-center items-start"
+        >
+          <p class="bg-p1 py-3 px-5 rounded-full text-white">Accupay Story</p>
+          <h1 class="display-4 pt-4 pb-6">
+            In 2012, an exciting journey began with a daring vision.
+          </h1>
+          <p class="uppercase text-bodyText font-medium text-base lg:text-xl">
+            message from our ceo.
+          </p>
+          <p class="heading-4 xl:text-[32px] pt-4 pb-6">
+            “A successful team requires members with complementary skill sets.”
+          </p>
+          <div class="flex justify-start items-center gap-3">
+            <img
+              src="assets/images/accupay_developer.png"
+              alt="image"
+              class="rounded-full"
+            />
+            <div class="">
+              <p>Sa Kibb</p>
+              <p class="text-bodyText text-sm">CEO Accupay</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="lg:col-start-7 col-span-12 md:col-span-6 flex flex-col gap-6 lg:gap-10 max-md:pt-6"
+        >
+          <div class="border-b pb-6 lg:pb-10">
+            <h4 class="heading-4 pb-6">Who We Are</h4>
+            <p class="text-bodyText">
+              AccuPay has been at the forefront of delivering innovative
+              financial solutions. Our journey began with a vision to simplify
+              financial processes for businesses of all sizes. Today, we stand
+              proud as a trusted partner,
+            </p>
+          </div>
+          <div class="border-b pb-6 lg:pb-10">
+            <h4 class="heading-4 pb-6">Our Mission</h4>
+            <p class="text-bodyText">
+              AccuPay is on a mission to empower businesses by providing
+              reliable, efficient, and innovative financial services. We strive
+              to be your go-to partner for all your accounting and payroll
+              needs, enabling you to focus on what you do best.
+            </p>
+          </div>
+          <div class="border-b pb-6 lg:pb-10">
+            <h4 class="heading-4 pb-6">Expert Team</h4>
+            <p class="text-bodyText">
+              Our team of experienced professionals brings a wealth of knowledge
+              to every client interaction. From payroll processing to financial
+              advisory, we have the expertise to guide your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Accupay Story Section End -->
+
+    <!-- Our Core value Section Start -->
+    <section class="stp-30 sbp-30 bg-softBg1">
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <div class="flex justify-center items-center max-xxl:overflow-hidden">
+            <div
+              class="max-w-[700px] text-center flex justify-center items-center flex-col"
+            >
+              <p class="bg-p1 py-2 sm:py-3 px-5 rounded-full text-white">
+                Our Values
+              </p>
+
+              <h1 class="display-4 pt-4 pb-4 lg:pb-6">Our Values</h1>
+
+              <p class="text-bodyText">
+                At AccuPay, our values are the foundation of everything we do.
+                They reflect our commitment to excellence, integrity, and client
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 stp-15">
+          <div
+            class="col-span-12 min-[450px]:col-span-6 md:col-span-3 flex justify-center items-center flex-col"
+          >
+            <div class="text-6xl text-s1">
+              <i class="ph-fill ph-handshake"></i>
+            </div>
+            <h4 class="heading-4 pb-4 pt-3">Integrity</h4>
+            <p class="pb-5 text-center">
+              We are transparent and do the right thing for the right reason
+            </p>
+          </div>
+
+          <div
+            class="col-span-12 min-[450px]:col-span-6 md:col-span-3 flex justify-center items-center flex-col"
+          >
+            <div class="text-6xl text-s1">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <h4 class="heading-4 pb-4 pt-3">Accountability</h4>
+            <p class="pb-5 text-center">
+              We take ownership of outcomes and deliver on our commitments
+            </p>
+          </div>
+          <div
+            class="col-span-12 min-[450px]:col-span-6 md:col-span-3 flex justify-center items-center flex-col"
+          >
+            <div class="text-6xl text-s1">
+              <i class="ph-fill ph-users-three"></i>
+            </div>
+            <h4 class="heading-4 pb-4 pt-3">Diversity</h4>
+            <p class="pb-5 text-center">
+              We seek and leverage differences and unique perspectives
+            </p>
+          </div>
+          <div
+            class="col-span-12 min-[450px]:col-span-6 md:col-span-3 flex justify-center items-center flex-col"
+          >
+            <div class="text-6xl text-s1">
+              <i class="ph-fill ph-user"></i>
+            </div>
+            <h4 class="heading-4 pb-4 pt-3">Customer Centricity</h4>
+            <p class="pb-5 text-center">
+              We start with the customer in everything we do
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Core value Section End -->
+
+    <!-- Award Section Start -->
+    <section class="stp-30 sbp-30">
+      <div class="container grid grid-cols-12 gap-6">
+        <div
+          class="flex flex-col justify-star items-start col-span-12 min-[500px]:col-span-6 lg:col-span-5 max-[500px]:pb-15"
+        >
+          <p class="bg-p1 py-3 px-5 rounded-full text-white">Our Awards</p>
+          <h2 class="display-4 pt-3">Award & Achievement</h2>
+          <div
+            class="flex flex-col justify-end items-start lg:items-end relative w-full"
+          >
+            <img
+              src="assets/images/award_element.png"
+              alt="image"
+              class="absolute min-[500px]:-bottom-14 lg:bottom-0 min-[500px]:right-0 xl:right-20 bottom-0 right-4"
+            />
+            <p
+              class="text-[60px] md:text-[100px] xl:text-[150px] font-bold !leading-none text-outline -rotate-12 min-[500px]:-rotate-45 min-[500px]:pt-28 pt-8 lg:pt-40"
+            >
+              Award
+            </p>
+            <p
+              class="text-s1 text-[60px] md:text-[100px] xl:text-[150px] font-bold leading-none -rotate-12 min-[500px]:-rotate-45 min-[500px]:max-lg:pt-6 lg:pr-0 xl:pr-11"
+            >
+              Award
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-span-12 min-[500px]:col-span-6 lg:col-start-7 flex flex-col justify-start items-start gap-6 lg:gap-10 relative"
+        >
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">
+                Awwwards SOTD
+              </p>
+              <p>FOR DISPLAY 2022</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">
+                Awwwards SOTD
+              </h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">Wix.com</p>
+              <p>INTERVIEW 2021</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">Wix.com</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">
+                CSS Awards
+              </p>
+              <p>FEATURE 2020</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">
+                CSS Awards
+              </h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">Muzli</p>
+              <p>FEATURE 2020</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">Muzli</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">Awwwards</p>
+              <p>FOR MUTEZA 2019</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">Awwwards</h4>
+            </div>
+          </div>
+          <div
+            class="flex justify-between items-center border-b pb-6 lg:pb-10 w-full group relative"
+          >
+            <div class="">
+              <p class="heading-4 group-hover:text-s2 duration-500">
+                Chapters Studio
+              </p>
+              <p>FOR DISPLAY 2018</p>
+            </div>
+            <a
+              href="about.html"
+              class="p-3 rounded-full bg-s1 text-2xl text-white group-hover:bg-s2 duration-500 !leading-[0]"
+            >
+              <i class="ph ph-arrow-up-right"></i>
+            </a>
+            <div
+              class="absolute top-4 lg:top-0 left-10 xl:left-1/2 w-[150px] lg:w-[250px] bg-s2 py-10 flex flex-col justify-center items-center border border-mainTextColor group-hover:visible group-hover:opacity-100 group-hover:z-10 group-hover:translate-y-4 invisible opacity-0 -translate-y-4 duration-500"
+            >
+              <img src="assets/images/award_icon.png" alt="image" />
+              <h4 class="heading-4 max-w-[100px] text-center pt-8">
+                Chapters Studio
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Award Section End -->
+
+    <!-- Counter Section Start -->
+    <section
+      style="background-image: url('assets/images/counter_bg.png')"
+      class="bg-cover stp-30 sbp-30 relative"
+    >
+      <div
+        class="container text-white flex justify-between items-center gap-8 sm:gap-4 md:gap-8 lg:gap-16 max-sm:flex-col"
+      >
+        <div class="text-center max-w-[280px]">
+          <p class="display-4 pb-3 flex justify-center items-center">
+            <span class="odometer" data-odometer-final="63">0</span>
+            <span>hrs</span>
+          </p>
+          <p>
+            Average time saved per month running payroll and HR after switching
+            to Accupay.
+          </p>
+        </div>
+        <div class="h-[120px] w-[2px] bg-white/70 mt-8 max-sm:hidden"></div>
+        <div class="text-center max-w-[280px]">
+          <p class="display-4 pb-3 counters flex justify-center items-center">
+            <span>$</span
+            ><span class="odometer" data-odometer-final="264589">0</span>
+          </p>
+          <p>
+            Average savings made per year running payroll and HR after switching
+            to Accupay.
+          </p>
+        </div>
+        <div class="h-[120px] w-[2px] bg-white/70 mt-8 max-sm:hidden"></div>
+        <div class="text-center max-w-[280px]">
+          <p class="display-4 pb-3 counters flex justify-center items-center">
+            <span class="odometer" data-odometer-final="8">0</span
+            ><span>Weeks</span>
+          </p>
+          <p>average time it takes to switch to Accupay - and often less</p>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Why Accupay Section Start -->
+    <section class="bg-softBg1 stp-30 sbp-30 overflow-hidden">
+  <div class="container">
+    <div
+      class="flex justify-between items-end gap-6 max-lg:flex-col max-lg:items-start"
+    >
+      <div class="max-w-[600px] flex justify-center items-start flex-col">
+        <p class="bg-p1 py-3 px-5 rounded-full text-white">Why Accupay</p>
+        <h1 class="display-4 pt-4">A platform for your global team</h1>
+      </div>
+      <p class="text-bodyText max-w-[500px]">
+        Your dependable guide to achieving freedom from manual HR work and
+        building that perfect workplace you have always aspired to build. Your
+        dependable guide to achieving freedom.
+      </p>
+    </div>
+    <div class="grid grid-cols-12 gap-6 stp-15">
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_1.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">
+          Hire or relocate team member with in house visa support
+        </h4>
+      </div>
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.3s"
+        data-wow-delay=".2s"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_2.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">
+          Create complaint contracts with a single click
+        </h4>
+      </div>
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.3s"
+        data-wow-delay=".4s"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_3.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">
+          Send equipment worldwide, without the hassle
+        </h4>
+      </div>
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.3s"
+        data-wow-delay=".6s"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_4.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">
+          Offer country- specific benefits at competitive rates
+        </h4>
+      </div>
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.3s"
+        data-wow-delay=".8s"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_5.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">
+          Provide your team with co-working access via work
+        </h4>
+      </div>
+      <div
+        class="col-span-12 sm:col-span-6 lg:col-span-4 bg-white p-6 xl:py-10 xl:px-15 flex flex-col items-center border border-white group hover:border-mainTextColor duration-700 hover:bg-s2 wow animate__animated animate__fadeInUp"
+        data-wow-duration="1.3s"
+        data-wow-delay="1s"
+      >
+        <div class="">
+          <img src="assets/images/whyAccoupayCard_6.png" alt="image" />
+        </div>
+        <h4 class="pt-8 heading-4">Save time using advance integrations</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Why Accupay Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section class="stp-30 sbp-30 relative sponsors">
+  <div class="overflow-hidden">
+    <img
+      src="assets/images/sliceIcon.png"
+      alt="image"
+      class="absolute top-0 right-2 -rotate-90 max-md:h-[80px]"
+    />
+  </div>
+  <div class="container">
+    <div
+      class="flex justify-between items-end gap-6 max-lg:flex-col max-lg:items-start"
+    >
+      <div class="max-w-[600px] flex justify-center items-start flex-col">
+        <p class="bg-p1 py-3 px-5 rounded-full text-white">Testimonial</p>
+        <h1 class="display-4 pt-4">Accupay Customer Stories</h1>
+      </div>
+      <p class="text-bodyText max-w-[500px]">
+        Startups thrive with AccuPay. Their flexible payroll solutions have been
+        instrumental in our journey, providing the support
+      </p>
+    </div>
+  </div>
+  <div class="stp-15">
+    <div class="swiper testimonial-carousel">
+      <div class="swiper-wrapper !flex !justify-center !items-center">
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial10.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Isabelle McKinney</p>
+                <p>Product Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial9.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Amy Gutierrez</p>
+                <p>CFO, Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial10.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Isabelle McKinney</p>
+                <p>Product Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial9.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Amy Gutierrez</p>
+                <p>CFO, Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial10.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Isabelle McKinney</p>
+                <p>Product Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial9.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Amy Gutierrez</p>
+                <p>CFO, Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-6">
+    <div class="swiper testimonial-carousel2">
+      <div class="swiper-wrapper !flex !justify-center !items-center">
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial10.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Isabelle McKinney</p>
+                <p>Product Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial9.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Amy Gutierrez</p>
+                <p>CFO, Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing.
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial8.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">John D</p>
+                <p>Small Business Owner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's personalized service has been a game-changer for my
+              small business. Efficient payroll processing."
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial7.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Hunter Romero</p>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="border border-strokeColor p-12 flex flex-col justify-center items-center hover:bg-s2 hover:border-mainTextColor duration-700"
+          >
+            <p class="text-bodyText text-center">
+              "AccuPay's payroll solutions have transformed HR processes at
+              Retail Innovations Ltd. The user-friendly platform"
+            </p>
+            <div class="flex gap-3 pt-3">
+              <div class="">
+                <img
+                  src="assets/images/testimonial6.png"
+                  alt="image"
+                  class="rounded-full"
+                />
+              </div>
+              <div class="">
+                <p class="text-lg font-medium">Ora Wong</p>
+                <p>Finance Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonial Section End -->
+
+    <!-- Pricing Section Start -->
+    <section class="bg-softBg1 stp-30 sbp-30 overflow-hidden">
+      <div class="container">
+  <div class="flex justify-center items-center">
+    <div class="text-center flex justify-center items-center flex-col">
+      <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center">
+          <div
+            class="max-w-[700px] text-center flex justify-center items-center flex-col"
+          >
+            <p
+              class="bg-p1 py-2 sm:py-3 px-5 rounded-full text-white wow animate__animated animate__fadeInUp"
+            >
+              Pricing
+            </p>
+
+            <h1
+              class="display-4 pt-4 pb-4 lg:pb-6 wow animate__animated animate__fadeInDown"
+            >
+              Our Pricing
+            </h1>
+
+            <p class="text-bodyText wow animate__animated animate__fadeInUp">
+              At Accupay, we believe in providing clear and flexible pricing
+              options tailored to your business needs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-mainTextColor mt-8 py-3 px-6 rounded-full relative after:absolute after:bg-s2 after:top-0 after:bottom-0 after:w-1/2 after:rounded-full after:duration-500 pricingBg pricingButtonAfterLeft"
+      >
+        <div class="relative z-10 flex gap-14 text-white">
+          <button class="duration-500 pricingTabLinks pricingButtonActive">
+            Monthly
+          </button>
+          <button class="duration-500 pricingTabLinks">Yearly</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-6 stp-15">
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 p-6 sm:p-10 border border-strokeColor hover:border-mainTextColor flex flex-col justify-start items-start bg-white hover:bg-s2 duration-700 group relative wow animate__animated animate__fadeInUp"
+      data-wow-duration="1.3s"
+    >
+      <div
+        class="p-4 bg-softBg group-hover:bg-mainTextColor duration-500 border group-hover:text-white text-4xl leading-[0] border-strokeColor group-hover:border-mainTextColor rounded-full"
+      >
+        <i class="ph ph-chart-donut"></i>
+      </div>
+      <h3 class="heading-3 pt-5 pb-4">Basic Plan</h3>
+      <p class="text-bodyText pb-8">
+        Hire employees in 100+ countries where you don't have entities
+      </p>
+      <p class="pb-6">
+        <span class="display-4"> $<span class="monthlyPrice">10</span> </span>
+        <span class="text-bodyText">- monthly</span>
+      </p>
+      <ul class="text-bodyText flex flex-col gap-5 pb-8">
+        <li class="inline-flex gap-3 justify-start items-center">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+
+          Accurate and Timely
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Basic Financial Records
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Starting at $X per month
+        </li>
+      </ul>
+      <a
+        href="contact.html"
+        class="py-4 w-full text-white font-medium bg-s1 rounded-full flex justify-center items-center gap-3 group-hover:bg-mainTextColor"
+      >
+        Get Started <i class="ph ph-arrow-right text-xl leading-[0]"></i>
+      </a>
+    </div>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 p-6 sm:p-10 border border-strokeColor hover:border-mainTextColor flex flex-col justify-start items-start bg-white hover:bg-s2 duration-700 group relative wow animate__animated animate__fadeInUp"
+      data-wow-duration="1.3s"
+      data-wow-delay=".2s"
+    >
+      <div
+        class="absolute top-9 py-1 right-4 uppercase text-[13px] text-white bg-s1 rotate-90 px-4 flex justify-center items-center"
+      >
+        <p class="pr-2">popular</p>
+        <span
+          class="rotate-90 text-7xl !leading-none absolute right-0 pb-16 group-hover:text-s2 duration-700"
+        >
+          <i class="ph-fill ph-caret-down"></i>
+        </span>
+      </div>
+
+      <div
+        class="p-4 bg-softBg group-hover:bg-mainTextColor duration-500 border group-hover:text-white text-4xl border-strokeColor group-hover:border-mainTextColor rounded-full leading-[0]"
+      >
+        <i class="ph ph-airplane-tilt"></i>
+      </div>
+      <h3 class="heading-3 pt-5 pb-4">Standard Plan</h3>
+      <p class="text-bodyText pb-8">
+        All packages come with mention any additional benefits, features,
+      </p>
+      <p class="pb-6">
+        <span class="display-4"> $ <span class="monthlyPrice">20</span> </span>
+        <span class="text-bodyText">- monthly</span>
+      </p>
+      <ul class="text-bodyText flex flex-col gap-5 pb-8">
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Payroll Processing
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Full Bookkeeping
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Tax Preparation
+        </li>
+      </ul>
+      <a
+        href="contact.html"
+        class="py-4 w-full text-white font-medium bg-s1 rounded-full flex justify-center items-center gap-3 group-hover:bg-mainTextColor"
+      >
+        Get Started <i class="ph ph-arrow-right text-xl leading-[0]"></i>
+      </a>
+    </div>
+    <div
+      class="col-span-12 md:col-span-6 lg:col-span-4 p-6 sm:p-10 border border-strokeColor hover:border-mainTextColor flex flex-col justify-start items-start bg-white hover:bg-s2 duration-700 group relative wow animate__animated animate__fadeInUp"
+      data-wow-duration="1.3s"
+      data-wow-delay=".4s"
+    >
+      <div
+        class="p-4 bg-softBg group-hover:bg-mainTextColor duration-500 border group-hover:text-white text-4xl border-strokeColor group-hover:border-mainTextColor rounded-full leading-[0]"
+      >
+        <i class="ph ph-rocket-launch"></i>
+      </div>
+      <h3 class="heading-3 pt-5 pb-4">Premium Plan</h3>
+      <p class="text-bodyText pb-8">
+        Explore our case studies to see how businesses like yours have benefited
+      </p>
+      <p class="pb-6">
+        <span class="display-4"> $<span class="monthlyPrice">40</span> </span>
+        <span class="text-bodyText">- monthly</span>
+      </p>
+      <ul class="text-bodyText flex flex-col gap-5 pb-8">
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Full Bookkeeping
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Tax Preparation
+        </li>
+        <li class="inline-flex gap-3">
+          <i
+            class="ph-fill ph-check-circle text-p1 group-hover:text-mainTextColor duration-500 leading-[0] flex justify-center items-center text-2xl"
+          ></i>
+          Financial Advisory
+        </li>
+      </ul>
+      <a
+        href="contact.html"
+        class="py-4 w-full text-white font-medium bg-s1 rounded-full flex justify-center items-center gap-3 group-hover:bg-mainTextColor"
+      >
+        Get Started <i class="ph ph-arrow-right text-xl leading-[0]"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+    </section>
+    <!-- Pricing Section End -->
+
+    <!-- Got Questions Section Start -->
+    <section class="sbp-30 stp-30">
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <div class="flex justify-center items-center max-xxl:overflow-hidden">
+            <div
+              class="max-w-[700px] text-center flex justify-center items-center flex-col"
+            >
+              <p class="bg-p1 py-2 sm:py-3 px-5 rounded-full text-white">
+                Contact
+              </p>
+
+              <h1 class="display-4 pt-4 pb-4 lg:pb-6">
+                Questions? Meet Ansawer
+              </h1>
+
+              <p class="text-bodyText">
+                Startups thrive with AccuPay. Their flexible payroll solutions
+                have been instrumental in our journey, providing the support
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6 stp-15">
+          <div class="col-span-12 min-[450px]:col-span-6 md:col-span-3">
+            <div class="flex justify-center items-center flex-col">
+              <div class="text-7xl text-s1">
+                <i class="ph-fill ph-binoculars"></i>
+              </div>
+              <h4 class="heading-4 pb-4 pt-3">Compare Accupay</h4>
+              <p class="pb-5 text-center">
+                Explore how AccuPay stands out. Check our comparison.
+              </p>
+              <a href="about.html" class="text-s1 underline font-medium">
+                Compare Accupay
+              </a>
+            </div>
+          </div>
+          <div class="col-span-12 min-[450px]:col-span-6 md:col-span-3">
+            <div class="flex justify-center items-center flex-col">
+              <div class="text-7xl text-s1">
+                <i class="ph-fill ph-desktop"></i>
+              </div>
+              <h4 class="heading-4 pb-4 pt-3">Explore The Demo</h4>
+              <p class="pb-5 text-center">
+                Curious about our services? Request a demo to experience
+                firsthand
+              </p>
+              <a href="about.html" class="text-s1 underline font-medium"> See Demo </a>
+            </div>
+          </div>
+          <div class="col-span-12 min-[450px]:col-span-6 md:col-span-3">
+            <div class="flex justify-center items-center flex-col">
+              <div class="text-7xl text-s1">
+                <i class="ph-fill ph-headphones"></i>
+              </div>
+              <h4 class="heading-4 pb-4 pt-3">Give Us a Ring</h4>
+              <p class="pb-5 text-center">
+                Monday through Friday from 6AM - 6PM MST
+              </p>
+              <a href="about.html" class="text-s1 underline font-medium"> Contact </a>
+            </div>
+          </div>
+          <div class="col-span-12 min-[450px]:col-span-6 md:col-span-3">
+            <div class="flex justify-center items-center flex-col">
+              <div class="text-7xl text-s1">
+                <i class="ph-fill ph-chat-centered"></i>
+              </div>
+              <h4 class="heading-4 pb-4 pt-3">Help Centre</h4>
+              <p class="pb-5 text-center">
+                Looking for answers? Visit our Help Center for detailed guides
+              </p>
+              <a href="about.html" class="text-s1 underline font-medium"> Help Center </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Got Questions Section End -->
+
+    <!-- CTA Section Start -->
+    <section
+  class="relative after:absolute after:bg-mainTextColor after:bottom-0 after:right-0 after:left-0 after:h-1/2 overflow-hidden"
+>
+  <div
+    class="container bg-p1 py-12 sm:py-20 px-4 sm:px-10 md:px-20 lg:px-40 relative z-10 wow animate__animated animate__fadeInUp"
+  >
+    <img
+      src="assets/images/sliceIcon.png"
+      alt="image"
+      class="absolute -top-4 sm:-top-6 lg:top-0 right-0 h-[60px] sm:h-[80px] lg:h-[120px] -rotate-90"
+    />
+    <p class="display-3 text-center text-white !leading-[130%]">
+      Make Accupay Part Of Your Work And Get Daily Update
+    </p>
+    <form onSubmit="{handleSubmit}" class="pt-6 sm:pt-10 relative">
+      <div class="flex justify-center items-center gap-3 max-[500px]:flex-col">
+        <input
+          type="text"
+          placeholder="Enter Your Email"
+          class="border border-mainTextColor outline-none bg-white py-3 sm:py-4 px-4 md:px-8 max-[500px]:w-full lg:w-2/4"
+        />
+        <button
+          class="border border-mainTextColor bg-s2 py-3 sm:py-4 px-4 md:px-8 font-medium"
+        >
+          Subscribe Now
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+    <!-- CTA Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-mainTextColor text-white/60">
+  <div class="container grid grid-cols-12 stp-30 sbp-30 gap-6 max-xxl:pr-4">
+    <div
+      class="col-span-12 min-[450px]:col-span-6 lg:col-span-3 flex flex-col gap-6 lg:gap-8"
+    >
+      <a href="index.html">
+        <img src="assets/images/logo_white.png" alt="image" />
+      </a>
+      <p class="">
+        Your trusted partner in accounting and payroll solutions. We deliver
+        precision, efficiency, and tailored services
+      </p>
+      <ul class="flex justify-start items-center gap-2">
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-facebook-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-reddit-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-youtube-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+        <li class="  ">
+          <a
+            class="bg-s1/50 rounded-full w-[40px] h-[40px] hover:bg-s1 duration-500 hover:-translate-y-1 text-white flex justify-center items-center"
+            href="javascript:void(0)"
+          >
+            <i class="ph ph-pinterest-logo leading-[0] text-2xl"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="xl:pl-30 col-span-12 min-[400px]:col-span-6 lg:col-span-3">
+      <h4
+        class="heading-4 mb-6 pb-2 relative text-white after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500"
+      >
+        Resources
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-5">
+        <li>
+          <a
+            href="index.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="about.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            About Page
+          </a>
+        </li>
+        <li>
+          <a
+            href="faq.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            FAQs Page
+          </a>
+        </li>
+        <li>
+          <a
+            href="blog.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Blog
+          </a>
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="xl:pl-30 col-span-12 min-[400px]:col-span-6 lg:col-span-3">
+      <h4
+        class="heading-4 mb-6 pb-2 relative text-white after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500"
+      >
+        Services
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-5">
+        <li>
+          <a
+            href="dentist-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Dentist Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="healthcare-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Healthcare Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="taxation-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Taxations Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="accounting-services.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Accounting Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="payroll-processing.html"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            Payroll Processing
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-span-12 min-[450px]:col-span-6 lg:col-span-3 xl:pl-30">
+      <h4
+        class="heading-4 mb-4 md:mb-6 pb-2 relative after:absolute after:w-[20%] after:h-[2px] after:bottom-0 after:left-0 after:bg-p1 hover:after:w-[40%] after:duration-500 text-white"
+      >
+        Get In Touch
+      </h4>
+      <ul class="flex flex-col gap-4 md:gap-3">
+        <li>
+          <a
+            href="mailto:info@mail.com"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"
+              ><i class="ph ph-envelope-simple-open"></i
+            ></span>
+            info@mail.com
+          </a>
+        </li>
+        <li>
+          <a
+            href="tel:+1234579"
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"><i class="ph ph-phone-call"></i></span>
+            +112 1254 124
+          </a>
+        </li>
+        <li>
+          <p
+            class="flex justify-start items-center gap-2 hover:text-white hover:translate-x-2 duration-500"
+          >
+            <span class="text-2xl pt-2"
+              ><i class="ph ph-paper-plane-tilt"></i
+            ></span>
+            255 Sheet, City Name Home Land, NY
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div
+      class="container py-6 flex justify-between items-center max-md:flex-col gap-6"
+    >
+      <p class="max-sm:text-center">
+        Accupay © Copyright 2024. All Rights Reserved.
+      </p>
+      <div class="flex justify-end items-center">
+        <a
+          href="privacy-policy.html"
+          class="border-r-2 border-white/60 pr-3 hover:text-white duration-500 leading-none"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="terms-conditions.html"
+          class="pl-3 hover:text-white duration-500 leading-none"
+        >
+          Terms & Conditions
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Footer Section End -->
+
+    <!-- modal video start -->
+    <div
+      class="fixed inset-0 bg-black/60 z-[998] videoModalBg videoModalBgClose"
+    ></div>
+    <div
+      class="fixed inset-0 z-[999] flex justify-center items-center videoModal videoModalClose"
+    >
+      <div class="relative z-[999]">
+        <div
+          class="w-full flex justify-end items-end absolute -top-10 sm:-top-2 right-0 sm:-right-9 lg:-right-12 z-[9999]"
+        >
+          <button class="hover:rotate-90 duration-300 videoModalButtonClose">
+            <i class="ph-thin ph-x text-4xl lg:text-[44px] text-white"></i>
+          </button>
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/ynLpZGegiJE?si=_KfsQPkSeEHF238S"
+          title="YouTube video player"
+          frameborder="0"
+          class="w-[300px] h-[200px] sm:w-[500px] sm:h-[300px] lg:w-[800px] lg:h-[500px]"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!-- Modal Video end -->
+
+    <!-- Scroll To top Button Start -->
+    <button
+  class="fixed text-white text-xl sm:text-2xl rounded-full bg-p1 hover:bg-s2 border border-p1 hover:border-white right-6 md:right-10 p-2 sm:p-3 z-40 jumping1 duration-700 scrollButton scrollButtonHide !leading-[0]"
+  aria-label="bottom to top button"
+>
+  <span class="block">
+    <i class="ph ph-arrow-up"></i>
+  </span>
+</button>
+
+    <!-- Scroll To top Button End -->
+
+    <!--==================================================================-->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="index.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>

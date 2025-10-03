@@ -1,0 +1,93 @@
+{
+	"meta": {
+		"generatedAt": "2025-09-29T16:14:16.872Z",
+		"tasksAnalyzed": 10,
+		"totalTasks": 10,
+		"analysisCount": 10,
+		"thresholdScore": 5,
+		"projectName": "Taskmaster",
+		"usedResearch": false
+	},
+	"complexityAnalysis": [
+		{
+			"taskId": 13,
+			"taskTitle": "Setup Next.js 14 Project Foundation with TypeScript and Tailwind CSS",
+			"complexityScore": 4,
+			"recommendedSubtasks": 8,
+			"expansionPrompt": "The task already has 8 well-defined subtasks covering all major configuration aspects. Consider adding implementation details and test strategies to each existing subtask to ensure comprehensive setup coverage.",
+			"reasoning": "This is a foundational setup task with moderate complexity. While it involves multiple configuration steps, each is well-documented and straightforward. The existing 8 subtasks appropriately break down the work into manageable pieces covering dependencies, tooling, and project structure."
+		},
+		{
+			"taskId": 14,
+			"taskTitle": "Implement JWT Authentication System with Role-Based Access Control",
+			"complexityScore": 8,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Break down this authentication system into: 1) JWT token management and storage, 2) Authentication context and state management, 3) Login/logout components with validation, 4) Protected route middleware, 5) Role-based access control implementation, 6) Token refresh and session management.",
+			"reasoning": "High complexity due to security implications, multiple authentication flows, role-based permissions, and integration with Next.js App Router. Requires careful handling of JWT tokens, secure storage, and comprehensive testing of authentication states."
+		},
+		{
+			"taskId": 15,
+			"taskTitle": "Create Dashboard Layout and Navigation Structure",
+			"complexityScore": 6,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Divide into: 1) Main layout component with sidebar and header structure, 2) Responsive navigation with mobile-first design, 3) Role-based menu items and active state management, 4) Header components with user profile and notifications, 5) Breadcrumb navigation and layout persistence.",
+			"reasoning": "Moderate to high complexity involving responsive design, role-based UI elements, and integration with authentication system. Requires careful consideration of UX patterns and AccuPay branding consistency across different screen sizes."
+		},
+		{
+			"taskId": 16,
+			"taskTitle": "Build Core UI Component Library",
+			"complexityScore": 7,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Structure as: 1) Basic form components (Button, Input, Select, Textarea), 2) Form controls (Checkbox, Radio) with validation states, 3) Data display components (Table with sorting/pagination), 4) Layout components (Card, Modal, Dialog), 5) Feedback components (Loading, Spinner, Skeleton), 6) Notification components (Alert, Toast), 7) Advanced DataTable with search and export functionality.",
+			"reasoning": "High complexity due to the need for comprehensive, reusable components with TypeScript support, accessibility features, and consistent design system integration. Each component requires multiple variants and states."
+		},
+		{
+			"taskId": 17,
+			"taskTitle": "Implement Employee Management System with CRUD Operations",
+			"complexityScore": 8,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Break into: 1) Employee data models and TypeScript interfaces, 2) Employee directory with search and filtering, 3) Employee profile pages with comprehensive information display, 4) Employee creation and onboarding workflow, 5) Bulk operations (import/export, mass updates), 6) Employee deletion with audit trail and confirmation.",
+			"reasoning": "High complexity involving comprehensive CRUD operations, complex data models, search/filtering functionality, bulk operations, and integration with React Query for state management. Requires careful data validation and user experience design."
+		},
+		{
+			"taskId": 18,
+			"taskTitle": "Develop Payroll Processing Engine Integration",
+			"complexityScore": 9,
+			"recommendedSubtasks": 7,
+			"expansionPrompt": "Organize as: 1) Payroll data models and calculation interfaces, 2) Pay period management with flexible configurations, 3) Deduction management system (taxes, benefits, custom), 4) Payroll calculation engine integration with Django backend, 5) Payroll preview interface with detailed breakdowns, 6) Payroll approval workflow and manager review, 7) Payroll history and audit trail functionality.",
+			"reasoning": "Very high complexity due to financial calculations, tax compliance requirements, complex business logic, and critical accuracy needs. Involves integration with backend systems and requires extensive testing for various payroll scenarios."
+		},
+		{
+			"taskId": 19,
+			"taskTitle": "Create Time Tracking and Attendance Management System",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Structure into: 1) Time entry data models and clock in/out interface, 2) Digital timesheet creation and submission workflow, 3) Overtime tracking with automatic detection and calculation, 4) Leave management system for various time-off types, 5) Manager approval processes for timesheets and requests, 6) Time tracking reports and hardware integration preparation.",
+			"reasoning": "High complexity involving time calculations, approval workflows, overtime rules, leave management, and preparation for hardware integration. Requires careful handling of time zones and labor law compliance."
+		},
+		{
+			"taskId": 20,
+			"taskTitle": "Build Reports and Analytics Dashboard",
+			"complexityScore": 8,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Divide into: 1) Reporting dashboard with various report types, 2) Custom report builder with filters and parameters, 3) Data visualization with charts and graphs, 4) Export functionality (PDF, Excel, CSV), 5) Compliance reports for tax and regulatory requirements, 6) Report scheduling and automated generation system.",
+			"reasoning": "High complexity due to data visualization requirements, multiple export formats, custom report building functionality, and performance considerations with large datasets. Requires integration with charting libraries and report generation systems."
+		},
+		{
+			"taskId": 21,
+			"taskTitle": "Implement Settings and Configuration Management",
+			"complexityScore": 7,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Break down as: 1) Company profile and business information management, 2) Tax configuration system for multiple jurisdictions, 3) Pay period and processing date settings, 4) User management with role-based access control, 5) Integration settings and API configurations, 6) Security settings, audit logs, and system monitoring.",
+			"reasoning": "High complexity involving multiple configuration domains, tax compliance settings, user management, and security considerations. Requires careful validation and audit trail implementation for sensitive configuration changes."
+		},
+		{
+			"taskId": 22,
+			"taskTitle": "Implement Employee Self-Service Portal",
+			"complexityScore": 6,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Structure as: 1) Employee portal with role-based access controls, 2) Pay stub viewing and PDF download functionality, 3) Personal information update forms with approval workflow, 4) Employee time tracking and timesheet submission interface, 5) Time-off request system with leave balance tracking and notifications.",
+			"reasoning": "Moderate to high complexity due to role-based access restrictions, PDF generation, approval workflows, and integration with existing employee and payroll systems. Requires careful attention to data privacy and security."
+		}
+	]
+}

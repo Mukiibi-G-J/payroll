@@ -1,0 +1,257 @@
+<context>
+# Overview  
+The Payroll System Frontend Dashboard is a comprehensive web application that provides HR managers, payroll administrators, and business owners with an intuitive interface to manage all aspects of employee payroll processing. Built as an extension of the existing AccuPay landing pages, this dashboard transforms the static marketing site into a fully functional payroll management system.
+
+The dashboard addresses the critical need for businesses to efficiently manage employee data, process payroll, track time, generate reports, and maintain compliance with tax regulations. By providing a centralized, user-friendly interface, it eliminates the complexity and time-consuming nature of manual payroll processing while ensuring accuracy and regulatory compliance.
+
+The system serves small to medium-sized businesses (10-500 employees) who need professional payroll management capabilities without the complexity of enterprise solutions. It bridges the gap between basic payroll services and expensive enterprise software, offering a modern, accessible solution that maintains the professional AccuPay brand experience.
+
+# Core Features  
+## Employee Management System
+- **Employee Directory**: Complete employee database with search, filtering, and sorting capabilities
+- **Employee Profiles**: Detailed employee information including personal details, employment history, tax information, and payroll settings
+- **Onboarding Workflow**: Streamlined process for adding new employees with required documentation collection
+- **Employee Self-Service**: Limited employee access for viewing pay stubs, updating personal information, and time tracking
+- **Bulk Operations**: Mass updates, imports, and exports for efficient employee data management
+
+## Payroll Processing Engine
+- **Payroll Calculation**: Automated calculation of gross pay, deductions, taxes, and net pay based on employee settings and time data
+- **Pay Period Management**: Flexible pay period configurations (weekly, bi-weekly, monthly, custom)
+- **Deduction Management**: Support for various deductions including taxes, benefits, 401(k), insurance, and custom deductions
+- **Overtime Calculation**: Automatic overtime calculation based on labor law requirements
+- **Payroll Preview**: Review and approve payroll before final processing
+- **Direct Deposit**: Integration-ready for direct deposit processing
+- **Pay Stub Generation**: Professional pay stub creation and distribution
+
+## Time Tracking & Attendance
+- **Time Entry Interface**: Simple time clock functionality for employees
+- **Timesheet Management**: Digital timesheet creation, submission, and approval workflows
+- **Overtime Tracking**: Automatic detection and calculation of overtime hours
+- **Leave Management**: Vacation, sick leave, and other time-off tracking
+- **Approval Workflows**: Manager approval processes for timesheets and time-off requests
+- **Integration Ready**: API endpoints for time clock hardware integration
+
+## Reports & Analytics Dashboard
+- **Payroll Reports**: Comprehensive payroll summaries, tax reports, and year-end documentation
+- **Employee Analytics**: Headcount trends, turnover analysis, and compensation insights
+- **Tax Compliance Reports**: Quarterly and annual tax reporting with export capabilities
+- **Custom Reports**: Flexible reporting system for business-specific needs
+- **Data Visualization**: Charts and graphs for key metrics and trends
+- **Export Capabilities**: PDF, Excel, and CSV export options for all reports
+
+## Settings & Configuration
+- **Company Profile**: Business information, tax IDs, and compliance settings
+- **Tax Configuration**: Federal, state, and local tax setup and management
+- **Pay Period Settings**: Configurable pay periods and processing schedules
+- **User Management**: Role-based access control with admin, manager, and employee permissions
+- **Integration Settings**: API keys, webhook configurations, and third-party service connections
+- **Backup & Security**: Data backup, audit logs, and security settings
+
+# User Experience  
+## Primary User Personas
+- **HR Manager**: Needs comprehensive employee management and payroll oversight capabilities
+- **Payroll Administrator**: Requires detailed payroll processing tools and compliance reporting
+- **Business Owner**: Wants high-level insights, cost management, and regulatory compliance assurance
+- **Employee**: Needs simple access to personal information, pay stubs, and time tracking
+
+## Key User Flows
+- **Employee Onboarding**: New hire data entry → tax form collection → payroll setup → system activation
+- **Payroll Processing**: Time data collection → payroll calculation → review and approval → processing and distribution
+- **Report Generation**: Select report type → configure parameters → generate and review → export or share
+- **Employee Self-Service**: Login → view pay stub → update personal information → submit time-off request
+
+## UI/UX Considerations
+- **Consistent Design Language**: Seamless integration with existing AccuPay branding and design system
+- **Progressive Disclosure**: Complex features hidden behind simple interfaces with advanced options available
+- **Mobile Responsiveness**: Full functionality available on tablets and mobile devices for on-the-go management
+- **Accessibility**: WCAG 2.1 AA compliance for inclusive user experience
+- **Performance**: Fast loading times and smooth interactions even with large datasets
+- **Error Prevention**: Clear validation messages, confirmation dialogs, and undo capabilities
+</context>
+
+<PRD>
+# Technical Architecture  
+## Phase 1: Clickable Prototype Architecture (Frontend Only)
+- **Frontend**: Next.js 14 with TypeScript, React 18, and Tailwind CSS
+- **State Management**: React Context API with useReducer for complex state (mock data)
+- **Data Layer**: Local mock data with realistic sample datasets
+- **Form Handling**: React Hook Form with Zod validation (client-side only)
+- **UI Components**: Custom component library built on existing AccuPay design system
+- **Routing**: Next.js App Router with mock authentication middleware
+- **Authentication**: Mock JWT simulation with role-based navigation
+
+## Phase 2+: Full System Architecture (Backend Integrated)
+- **Frontend**: Next.js 14 with TypeScript, React 18, and Tailwind CSS
+- **State Management**: React Context API with useReducer for complex state
+- **Data Fetching**: React Query for server state management and caching
+- **Form Handling**: React Hook Form with Zod validation
+- **UI Components**: Custom component library built on existing AccuPay design system
+- **Routing**: Next.js App Router with protected route middleware
+- **Authentication**: JWT-based authentication with role-based access control
+
+## Data Models
+- **Employee**: Personal info, employment details, tax settings, payroll configuration
+- **Payroll**: Pay periods, calculations, deductions, tax withholdings, net pay
+- **TimeEntry**: Clock in/out times, breaks, overtime, timesheet status
+- **User**: Authentication, roles, permissions, audit trail
+- **Company**: Business info, tax settings, payroll configurations
+- **Report**: Generated reports, templates, export formats
+
+## APIs and Integrations
+- **Django Backend**: RESTful API for all data operations
+- **Authentication API**: JWT token management and user sessions
+- **Payroll Calculation Engine**: Server-side payroll processing logic
+- **Tax Service Integration**: Real-time tax rate calculations and compliance checking
+- **Direct Deposit API**: Banking integration for payroll distribution
+- **Time Clock Integration**: Hardware and software time tracking system APIs
+- **Reporting Engine**: Dynamic report generation and export services
+
+## Infrastructure Requirements
+- **Frontend Hosting**: Vercel or similar for optimal Next.js performance
+- **Backend Hosting**: Django application with PostgreSQL database
+- **CDN**: Global content delivery for assets and static files
+- **Monitoring**: Application performance monitoring and error tracking
+- **Backup**: Automated database backups and disaster recovery
+- **Security**: SSL certificates, data encryption, and compliance monitoring
+
+# Development Roadmap  
+## Phase 1: Clickable Prototype (Frontend Only)
+**Objective**: Create a fully functional, interactive prototype that demonstrates all user flows and interfaces without backend integration.
+
+- **Dashboard Structure**: Complete routing with all planned pages and navigation
+- **Authentication UI**: Login/logout interfaces with role-based navigation (mock authentication)
+- **Dashboard Layout**: Full sidebar navigation, header components, and responsive design
+- **Employee Management Prototype**: Complete employee list, detail views, and CRUD interfaces with mock data
+- **Payroll Processing Prototype**: Payroll overview, calculation previews, and processing workflows with sample data
+- **Time Tracking Prototype**: Time entry interfaces, timesheet management, and approval workflows with mock data
+- **Reports & Analytics Prototype**: Dashboard charts, report interfaces, and data visualization with sample datasets
+- **Settings & Configuration Prototype**: Company settings, user management, and configuration interfaces
+- **Core UI Components**: Complete component library with buttons, forms, tables, cards, modals, and interactive elements
+- **Mock Data Integration**: Comprehensive sample data for all modules to demonstrate full functionality
+- **User Flow Testing**: All primary user journeys working end-to-end with realistic data scenarios
+
+## Phase 2: Backend Integration & Real Data
+- **API Integration**: Connect frontend to Django backend APIs
+- **Authentication System**: Real JWT-based authentication with backend validation
+- **Data Persistence**: Replace mock data with real database operations
+- **Form Validation**: Server-side validation and error handling
+- **Real-time Updates**: WebSocket integration for live data updates
+- **File Upload/Download**: Actual file handling for imports, exports, and documents
+
+## Phase 3: Core Employee Management (Backend Connected)
+- Complete employee CRUD operations with database persistence
+- Employee profile pages with real data integration
+- Employee search, filtering, and sorting with backend queries
+- Bulk employee operations (import, export, mass updates) with file processing
+- Employee onboarding workflow with data validation
+- Form validation and error handling for all employee operations
+
+## Phase 4: Payroll Processing (Backend Connected)
+- Payroll calculation engine integration with real business logic
+- Pay period management and configuration with database storage
+- Deduction and tax calculation logic with compliance validation
+- Payroll preview and approval workflow with audit trails
+- Pay stub generation and distribution system with real document creation
+- Payroll history and audit trail functionality with database logging
+
+## Phase 5: Time Tracking System (Backend Connected)
+- Time entry interface with real-time data synchronization
+- Timesheet creation and submission workflow with approval processes
+- Manager approval system for timesheets with notification system
+- Overtime calculation and tracking with business rule enforcement
+- Leave management and time-off requests with workflow automation
+- Time tracking reports and analytics with real data processing
+
+## Phase 6: Reports & Analytics (Backend Connected)
+- Comprehensive reporting dashboard with real-time data
+- Payroll and tax compliance reports with accurate calculations
+- Employee analytics and insights with historical data analysis
+- Custom report builder with dynamic data filtering
+- Data visualization with live data feeds
+- Export functionality (PDF, Excel, CSV) with real document generation
+
+## Phase 7: Advanced Features & Production
+- User management and role-based permissions with security enforcement
+- Company settings and configuration management with validation
+- Integration settings for third-party services with API connections
+- Advanced search and filtering across all modules with database optimization
+- Notification system for alerts and reminders with real-time delivery
+- Help center and documentation integration with user support
+
+# Logical Dependency Chain
+## Phase 1: Clickable Prototype Foundation (Frontend Only)
+1. **Design System & UI Components**: Complete component library with consistent styling
+2. **Dashboard Layout & Navigation**: Full navigation structure and responsive layout
+3. **Mock Authentication**: Login/logout UI with role-based navigation simulation
+4. **Mock Data Layer**: Comprehensive sample data for all modules and user scenarios
+
+## Phase 1: Core Prototype Modules (Frontend Only)
+1. **Employee Management Prototype**: Complete CRUD interfaces with realistic sample data
+2. **Payroll Processing Prototype**: Calculation previews and processing workflows with mock data
+3. **Time Tracking Prototype**: Time entry and timesheet interfaces with sample scenarios
+4. **Reports & Analytics Prototype**: Dashboard charts and report interfaces with mock datasets
+5. **Settings & Configuration Prototype**: All configuration interfaces with sample settings
+
+## Phase 2: Backend Integration Foundation
+1. **API Integration Layer**: Connect frontend to Django backend APIs
+2. **Real Authentication**: Replace mock auth with JWT-based backend authentication
+3. **Data Persistence**: Replace mock data with real database operations
+4. **Form Validation**: Server-side validation and error handling
+
+## Phase 3+: Backend-Connected Features
+1. **Employee Management (Real Data)**: Database-connected CRUD operations
+2. **Payroll Processing (Real Logic)**: Backend calculation engine integration
+3. **Time Tracking (Real Data)**: Database-synchronized time tracking
+4. **Reports & Analytics (Real Data)**: Live data processing and visualization
+5. **Advanced Features**: User management, integrations, and production optimizations
+
+# Risks and Mitigations  
+## Technical Challenges
+- **Complex Payroll Calculations**: Risk of incorrect calculations leading to compliance issues
+  - *Mitigation*: Extensive testing with known payroll scenarios, server-side validation, and audit trails
+- **Data Security & Privacy**: Handling sensitive employee and payroll data
+  - *Mitigation*: Implement encryption, secure authentication, regular security audits, and compliance with data protection regulations
+- **Performance with Large Datasets**: Dashboard performance with hundreds of employees
+  - *Mitigation*: Implement pagination, lazy loading, data virtualization, and efficient database queries
+
+## Prototype Scope Management
+- **Feature Creep**: Risk of adding too many features to the clickable prototype
+  - *Mitigation*: Focus on complete user flows and interfaces, avoid backend complexity in Phase 1
+- **Mock Data Quality**: Risk of unrealistic or incomplete sample data
+  - *Mitigation*: Create comprehensive, realistic sample datasets that represent real-world scenarios
+- **User Experience Consistency**: Maintaining AccuPay brand consistency across dashboard
+  - *Mitigation*: Regular design reviews, component library usage, and consistent styling guidelines
+- **Prototype Fidelity**: Risk of prototype not accurately representing final product
+  - *Mitigation*: Use production-ready components and realistic data to ensure prototype accurately demonstrates final functionality
+
+## Resource Constraints
+- **Development Timeline**: Aggressive timeline with complex feature set
+  - *Mitigation*: Focus on complete clickable prototype first, use existing design system, and implement iterative development approach
+- **Prototype Testing**: Ensuring comprehensive user flow testing in prototype
+  - *Mitigation*: User testing sessions with stakeholders, interactive prototype demos, and feedback collection
+- **Backend Integration**: Dependency on Django backend development
+  - *Mitigation*: Complete frontend prototype with mock data first, then integrate backend APIs in Phase 2, parallel development approach
+
+# Appendix  
+## Research Findings
+- **Market Analysis**: Competitive analysis of existing payroll solutions shows opportunity for modern, user-friendly interface
+- **User Interviews**: HR managers prefer simple, intuitive interfaces over feature-heavy enterprise solutions
+- **Technical Research**: Next.js 14 with App Router provides optimal performance and developer experience for dashboard applications
+
+## Technical Specifications
+- **Browser Support**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- **Mobile Support**: iOS 14+, Android 10+ with responsive design
+- **Performance Targets**: <3s initial load time, <1s navigation between pages
+- **Accessibility**: WCAG 2.1 AA compliance with screen reader support
+- **Data Format**: RESTful API with JSON data exchange
+- **Authentication**: JWT tokens with refresh token rotation
+- **File Uploads**: Support for CSV imports, PDF exports, and image uploads
+- **Real-time Updates**: WebSocket integration for live notifications and updates
+
+## Compliance Requirements
+- **Data Protection**: GDPR and CCPA compliance for employee data handling
+- **Tax Compliance**: Integration with tax calculation services for accurate withholding
+- **Audit Trail**: Complete logging of all payroll and employee data changes
+- **Backup & Recovery**: Automated daily backups with 30-day retention
+- **Security Standards**: SOC 2 Type II compliance framework implementation
+</PRD>
